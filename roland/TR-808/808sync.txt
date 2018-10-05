@@ -1,0 +1,377 @@
+Date: Thu, 22 Dec 2005 15:47:33 -0000
+To: <analogue@hyperreal.org>
+From: "Colin f" <colin@colinfraser.com>
+Subject: Re: [AH] 909 as converter? Was Re: [AH] TR-808 sync
+Message-ID: <000b01c6070f$06653e00$0101a8c0@zen2>
+
+I'm a digest reader, so I'll bunch a few replies into one...
+
+Paul Perry wrote:
+> I suppose it would be possible for someone to make an alternative 
+> operating system for it?
+> (not ME, obviously, but.....someone? Impossible or not?)
+
+I thought about it, until I saw the assembler for the NEC CPU it uses.
+Ugh.
+
+> As for the lack of merge, maybe that was due  to scarcity of memory 
+> for the necessary buffer.
+
+It's very easy to crash a 909 by sending it something it doesn't like...
+I think MIDI was something very new and complicated for the Roland engineers at the time. 
+
+Brandon Rogers wrote:
+> Subject: Re: [AH] TR-808 sync issues....
+
+> I haven't had any trouble with a Mobius and an 808 but I'm using the 
+> Mobius Midi out to 808 Midi in (Kenton Midi)
+
+There are two issues with 808 sync.
+As discussed earlier, your sync master must obey the rule about reseting the clock line and giving the 808 9ms or so to get ready before the first clock pulse after RUN goes high.
+Second is that there's an internal trimmer in the 808 that sets an oscillator to strobe the INTterupt line every 2ms.
+The interrupt routine then polls the DIN sync input lines, among other things.
+So if your incoming DIN clock pulse is shorter than the interrupt period, it can miss clock pulses.
+I've seen a few 808s, 606s and 303s that didn't sync properly simply because this trimmer was out of whack.
+
+> I have used the Mobius Din Sync output to 909 Din Syn input and that 
+> works fine as well.
+
+I find 909 DIN sync works more reliably than MIDI sync.
+There is a later version OS for the 909 that is supposed to fix all sync issues, so if anyone has an image of it...
+
+Florian Anwander wrote:
+> That rises the question: Did really noone ever try to extend or change 
+> the OS's of the TR808? Especially realtime switching from write mode 
+> to pattern play mode at the TR-808 would be a dream.
+
+The 808 OS is mask programmed, so you'd need to do a CPU replacement.
+I have that on my 'very rainy day' list...
+
+For my 909, I can manually stop it from its front panel, switch to pattern edit, then restart it in sync with my P3 using the resync function (which restarts DIN sync at the next bar loop).
+But the 808 does weird shit if you switch mode from play to edit while it's running - it changes pattern etc.
+So it'll need the RUN line dropped altogether for a mode switch, followed by a synchronised restart at the bar loop.
+
+Cheers,
+Colin f
+
+------------------------------
+
+Date: Thu, 22 Dec 2005 10:11:19 -0800 (PST)
+To: "Colin f" <colin@colinfraser.com>
+From: jesse@experimedia.net
+Cc: analogue@hyperreal.org
+Subject: Re: [AH] 909 as converter? Was Re: [AH] TR-808 sync
+Message-ID: <65283.65.43.225.76.1135275079.squirrel@webmail.experimedia.net>
+
+My replies are in line...please scroll down....
+
+> I'm a digest reader, so I'll bunch a few replies into one...
+>
+> Paul Perry wrote:
+>> I suppose it would be possible for someone to make an alternative 
+>> operating system for it?
+>> (not ME, obviously, but.....someone? Impossible or not?)
+>
+> I thought about it, until I saw the assembler for the NEC CPU it uses.
+> Ugh.
+>
+>> As for the lack of merge, maybe that was due  to scarcity of memory 
+>> for the necessary buffer.
+>
+> It's very easy to crash a 909 by sending it something it doesn't like...
+> I think MIDI was something very new and complicated for the Roland 
+> engineers at the time.
+
+I've seen this happen first hand...Not to veer too far off subject, but is the MIDI of the time in the 909 24ppq also?  If so, machines of this day run more like 48ppq or 96ppq?  I may have confused my readings, just trying to verify...
+
+>
+>
+> Brandon Rogers wrote:
+>> Subject: Re: [AH] TR-808 sync issues....
+>
+>> I haven't had any trouble with a Mobius and an 808 but I'm using the 
+>> Mobius Midi out to 808 Midi in (Kenton Midi)
+>
+> There are two issues with 808 sync.
+> As discussed earlier, your sync master must obey the rule about 
+> reseting the clock line and giving the 808 9ms or so to get ready 
+> before the first clock pulse after RUN goes high.
+> Second is that there's an internal trimmer in the 808 that sets an 
+> oscillator to strobe the INTterupt line every 2ms.
+> The interrupt routine then polls the DIN sync input lines, among other 
+> things.
+> So if your incoming DIN clock pulse is shorter than the interrupt 
+> period, it can miss clock pulses.
+> I've seen a few 808s, 606s and 303s that didn't sync properly simply 
+> because this trimmer was out of whack.
+
+Do you by chance know the trimmers location on the board and it's suggested setting on the 808 especially?
+
+>
+>> I have used the Mobius Din Sync output to 909 Din Syn input and that 
+>> works fine as well.
+>
+> I find 909 DIN sync works more reliably than MIDI sync.
+> There is a later version OS for the 909 that is supposed to fix all 
+> sync issues, so if anyone has an image of it...
+
+Does anyone know the specific OS in question here?  Also how does one check the current OS in the machine?
+
+Thanks,
+Jesse
+
+>
+>
+> Florian Anwander wrote:
+>> That rises the question: Did really noone ever try to extend or 
+>> change the OS's of the TR808? Especially realtime switching from 
+>> write mode to pattern play mode at the TR-808 would be a dream.
+>
+> The 808 OS is mask programmed, so you'd need to do a CPU replacement.
+> I have that on my 'very rainy day' list...
+>
+> For my 909, I can manually stop it from its front panel, switch to 
+> pattern edit, then restart it in sync with my P3 using the resync 
+> function (which restarts DIN sync at the next bar loop).
+> But the 808 does weird shit if you switch mode from play to edit while 
+> it's running - it changes pattern etc.
+> So it'll need the RUN line dropped altogether for a mode switch, 
+> followed by a synchronised restart at the bar loop.
+>
+> Cheers,
+> Colin f
+>
+>
+>
+
+--
+HYPERLINK www.experimedia.net www.experimedia.net
+
+------------------------------
+
+Date: Thu, 22 Dec 2005 10:11:54 -0800 (PST)
+To: "Colin f" <colin@colinfraser.com>
+From: jesse@experimedia.net
+Cc: analogue@hyperreal.org
+Subject: Re: [AH] 909 as converter? Was Re: [AH] TR-808 sync
+Message-ID: <65285.65.43.225.76.1135275114.squirrel@webmail.experimedia.net>
+
+My replies are in line...please scroll down....
+
+> I'm a digest reader, so I'll bunch a few replies into one...
+>
+> Paul Perry wrote:
+>> I suppose it would be possible for someone to make an alternative 
+>> operating system for it?
+>> (not ME, obviously, but.....someone? Impossible or not?)
+>
+> I thought about it, until I saw the assembler for the NEC CPU it uses.
+> Ugh.
+>
+>> As for the lack of merge, maybe that was due  to scarcity of memory 
+>> for the necessary buffer.
+>
+> It's very easy to crash a 909 by sending it something it doesn't like...
+> I think MIDI was something very new and complicated for the Roland 
+> engineers at the time.
+
+I've seen this happen first hand...Not to veer too far off subject, but is the MIDI of the time in the 909 24ppq also?  If so, machines of this day run more like 48ppq or 96ppq?  I may have confused my readings, just trying to verify...
+
+>
+>
+> Brandon Rogers wrote:
+>> Subject: Re: [AH] TR-808 sync issues....
+>
+>> I haven't had any trouble with a Mobius and an 808 but I'm using the 
+>> Mobius Midi out to 808 Midi in (Kenton Midi)
+>
+> There are two issues with 808 sync.
+> As discussed earlier, your sync master must obey the rule about 
+> reseting the clock line and giving the 808 9ms or so to get ready 
+> before the first clock pulse after RUN goes high.
+> Second is that there's an internal trimmer in the 808 that sets an 
+> oscillator to strobe the INTterupt line every 2ms.
+> The interrupt routine then polls the DIN sync input lines, among other 
+> things.
+> So if your incoming DIN clock pulse is shorter than the interrupt 
+> period, it can miss clock pulses.
+> I've seen a few 808s, 606s and 303s that didn't sync properly simply 
+> because this trimmer was out of whack.
+
+Do you by chance know the trimmers location on the board and it's suggested setting on the 808 especially?
+
+>
+>> I have used the Mobius Din Sync output to 909 Din Syn input and that 
+>> works fine as well.
+>
+> I find 909 DIN sync works more reliably than MIDI sync.
+> There is a later version OS for the 909 that is supposed to fix all 
+> sync issues, so if anyone has an image of it...
+
+Does anyone know the specific OS in question here?  Also how does one check the current OS in the machine?
+
+Thanks,
+Jesse
+
+>
+>
+> Florian Anwander wrote:
+>> That rises the question: Did really noone ever try to extend or 
+>> change the OS's of the TR808? Especially realtime switching from 
+>> write mode to pattern play mode at the TR-808 would be a dream.
+>
+> The 808 OS is mask programmed, so you'd need to do a CPU replacement.
+> I have that on my 'very rainy day' list...
+>
+> For my 909, I can manually stop it from its front panel, switch to 
+> pattern edit, then restart it in sync with my P3 using the resync 
+> function (which restarts DIN sync at the next bar loop).
+> But the 808 does weird shit if you switch mode from play to edit while 
+> it's running - it changes pattern etc.
+> So it'll need the RUN line dropped altogether for a mode switch, 
+> followed by a synchronised restart at the bar loop.
+>
+> Cheers,
+> Colin f
+>
+>
+>
+
+--
+HYPERLINK www.experimedia.net www.experimedia.net
+
+------------------------------
+
+Date: Fri, 23 Dec 2005 08:52:55 +1100
+To: <analogue@hyperreal.org>
+From: "Paul Perry" <pfperry@melbpc.org.au>
+Subject: Re: [AH] 909 as converter? Was Re: [AH] TR-808 sync
+Message-ID: <001901c60742$12d19980$0a01a8c0@frostwave>
+
+I wasn't thinking of usign the original processor at all, I was thinking of using a totally different processor and interfacign to the lines that go to & from the original processor.
+It would be madness to use the NEC.
+best, paul perry Melboune Australia
+
+----- Original Message ----- 
+>> I suppose it would be possible for someone to make an alternative 
+>> operating system for it?
+>> (not ME, obviously, but.....someone? Impossible or not?)
+> I thought about it, until I saw the assembler for the NEC CPU it uses.
+> Ugh.
+>
+
+------------------------------
+
+Date: Thu, 22 Dec 2005 22:02:45 -0000
+To: <jesse@experimedia.net>
+From: "Colin f" <colin@colinfraser.com>
+Cc: <analogue@hyperreal.org>
+Subject: RE: [AH] 909 as converter? Was Re: [AH] TR-808 sync
+Message-ID: <000c01c60743$7041edd0$0101a8c0@zen2>
+
+> I've seen this happen first hand...Not to veer too far off subject, 
+> but is the MIDI of the time in the 909 24ppq also?  If so, machines of 
+> this day run more like 48ppq or 96ppq?  I may have confused my 
+> readings, just trying to verify...
+
+MIDI clock is, and has always been, 24 ppqn.
+But internally the 909 uses 48ppqn, and doubles the incoming clock.
+That may be the source of some of its syncing problems - clock doubling can cause problems if you have a sudden change in tempo.
+Most PC sequencers don't send MIDI clock while they are stopped, so that's a sudden change right there...
+
+> Do you by chance know the trimmers location on the board and it's 
+> suggested setting on the 808 especially?
+
+On the 808 it's trimmer TM1. You need to hook a scope or digital timer to test point TP2, and adjust the trimmer for a 1.9ms period.
+On the 303 it's trimmer TM2 and test point TP2. The 303 notes specify a 1.8ms period.
+On the 606, it's trimmer TM1 again. The schematics don't give a number for the test point, but the period is 1.8ms.
+
+> Does anyone know the specific OS in question here?  Also how does one 
+> check the current OS in the machine?
+
+If you hold TRACK 1 and step key 1 while powering on your 909, the version number will be shown on the step LEDs.
+
+Cheers,
+Colin f
+
+------------------------------
+
+Date: Thu, 22 Dec 2005 14:45:30 -0800 (PST)
+To: analogue@hyperreal.org
+From: "Renegade808" <mike@renegaderhythms.com>
+Subject: Re: [AH] 909 as converter? Was Re: [AH] TR-808 sync
+Message-ID: <64713.24.21.189.221.1135291530.squirrel@mail.renegaderhythms.com>
+
+>> I have used the Mobius Din Sync output to 909 Din Syn input and that 
+>> works fine as well.
+>
+> I find 909 DIN sync works more reliably than MIDI sync.
+> There is a later version OS for the 909 that is supposed to fix all 
+> sync issues, so if anyone has an image of it...
+
+This has been my experience as well......my Mobius runs my 909 better with din sync than with midi....i tried the midi and thought the 909 was seriously wacked.....then i tried din sync and it worked great...although the 909 still needs a good cleaning and a few pots replaced at least it sync's now.
+
+michael
+
+------------------------------
+
+Date: Thu, 22 Dec 2005 07:50:21 -0800
+To: analogue@hyperreal.org
+From: David Bate <dave@renegaderhythms.com>
+Subject: Re: [AH] TR-808 sync issues....
+Message-ID: <43AACB3D.2030609@renegaderhythms.com>
+
+We've used the Mobius on both our 808 and 606 with no problems.
+
+Though if you are worried about the cost, you can buy a DIY P3 for about the same cost as the Mobius, and you'll be getting 8 Mobius' in 1 ...
+So don't let costs get in your way....
+
+Dave
+
+Brandon Rogers wrote:
+> I haven't had any trouble with a Mobius and an 808
+> 
+> but I'm using the Mobius Midi out to 808 Midi in (Kenton Midi)
+> 
+> I have used the Mobius Din Sync output to 909 Din Syn input and that 
+> works fine as well.
+> 
+> I am planning on using my Mobius to control my MS-20, sync some drum 
+> machines, and use either the mobius clock out or 808 trigger outs to 
+> sync my
+> SH-101
+> 
+> -BrandonR
+> 
+> On 12/21/05, jesse@experimedia.net <jesse@experimedia.net> wrote:
+> 
+>>
+>>
+>>>If you slave a DIN sync device to a P3 sequencer running from 
+>>>internal clock, you'll find it works perfectly - I have an 808 and 
+>>>909
+>>
+>>permanently
+>>
+>>>slaved by DIN sync, and they both run perfectly, with sub 1ms latency.
+>>>
+>>>Cheers,
+>>>Colin f
+>>>
+>>
+>>The P3 looks badass, but right now I don't have that kind of time or 
+>>money.
+>>Does anyone know how well the Future Retro Mobius works for such issues?
+>>I could really use one of those anyway...
+>>Thanks,
+>>Jesse
+>>
+>>--
+>>HYPERLINK www.experimedia.net www.experimedia.net
+>>
+> 
+>>
+> 
+
+------------------------------
+
