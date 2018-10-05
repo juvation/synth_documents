@@ -1,0 +1,361 @@
+
+	<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+	<html>
+	<head>
+		<title>SOS</title>
+		<meta http-equiv="content-type" content="text/html;charset=ISO-8859-1">
+		<meta name="robots" content="index,follow">
+		<script language="javascript" src="/include/utility.js"></script>
+		<link rel="alternate" type="application/rss+xml" title="RSS" href="/news/sosrssfeed.php" />
+		<link rel="SHORTCUT ICON" href="/favicon.ico">
+		<link href="/styles/StyleMac.css" rel="stylesheet" methods="text/css" type="text/css">		<script language="Javascript">
+		<!--//
+							var iBanner = 0;
+				var aryBanner = Array();
+				var lastrun = 0;
+				var iInterval = 30000;
+			
+				aryBanner[0] = Array('www.sheetmusicplus.com/a/button.html?id=74020', '/images/adverts/smp468x60genericani.gif', 'Buy your sheet music online! Click here', false);
+				aryBanner[1] = Array('www.sounds-expo.co.uk', '/images/adverts/sounds-banner-raz-doe2.gif', 'Sounds Expo! Click here', false);
+				//aryBanner[1] = Array('www.surroundexpo.com', '/images/adverts/surround468x60.gif', 'Surround Expo 2005', false);
+				if (aryBanner.length > 1) var banTimerID = setTimeout('ChangeBanner()', iInterval);
+			
+				function ChangeBanner() {
+					// Check we're not running this too quickly (Firefox runaway condition)
+					var t = new Date();
+					thisrun = t.getMinutes() * 60 + t.getSeconds();
+					if (thisrun - lastrun < iInterval/1000) return;
+					
+					iBanner = (iBanner == aryBanner.length - 1) ? 0 : iBanner + 1;
+					var page = document.all ? document.all : document;
+					page.Banner.src = aryBanner[iBanner][1];
+					page.Banner.alt = aryBanner[iBanner][2];
+
+					if (banTimerID) clearTimeout(banTimerID);
+					if (aryBanner.length > 1) {
+						banTimerID = setTimeout('ChangeBanner()', iInterval);
+						lastrun = thisrun;
+					}
+				}
+			
+				function GoBanner() {
+					OpenSite(aryBanner[iBanner][0]);
+					return;
+				}
+						
+				// -->
+		</script>
+	</head>
+	<body topmargin="0" marginheight="0" leftmargin="0" marginwidth="0" onload="ChangeBanner();">
+			<SCRIPT language="JavaScript" src="/include/milonic_src.js" type="text/javascript"></SCRIPT>	
+		<script	language="JavaScript">
+		if(ns4)_d.write('<scr'+'ipt language="JavaScript" src="/include/mmenuns4.js"><\/scr'+"ipt>");		
+		  else _d.write("<scr"+'ipt language="JavaScript" src="/include/mmenudom.js"><\/scr'+"ipt>"); 
+		</script>
+		<SCRIPT language="JavaScript" src="http://www.soundonsound.com/include/menu_data.js.php" type="text/javascript"></SCRIPT>	
+		<script language="Javascript">drawMenus();</script>
+		<a name="Top"></a>
+	<table cellpadding="0" cellspacing="0" border="0" width="99.9%">
+	<tr>
+		<td style="padding-top: 5px; padding-left: 5px"><a href="http://www.soundonsound.com/index.php?url=/"><img src="/images/nav_logo.gif" width="298" height="66" alt="Sound On Sound : click for home page" border="0" /></a></td>
+				<td style="padding-top: 5px; padding-right: 5px" valign="top" align="right"><a href="javascript:GoBanner()"><img name="Banner" src="/images/spacer.gif" height="60" width="468" border="0" alt="" hspace="5" /></a></td>
+		</tr>
+		<tr>
+			<td style="padding-left: 5px; padding-top: 6px" class="navtext"><div id="PageTitle">SOS</div>
+			</td>
+			<td style="padding-right: 5px"  align="right"><script language="Javascript">
+function GoSearch() {
+	var frm = document.forms['minisearch'];
+	if (frm.Keyword.value != ' quick search' && frm.Keyword.value != '') {
+		frm.submit();
+	} else {
+		alert('Please type in something to search for!');
+	}
+}
+</script>
+<table border="0" cellpadding="1" cellspacing="0" align="right">
+<tr>
+	<form name="minisearch" action="http://www.soundonsound.com/index.php" method="get">
+	<td align="right" valign="middle"><img src="/images/nav_jumpto.gif" alt="jump to" align="absmiddle" border="0">
+		<select name="section" size="1" onChange="location.href=(document.forms['minisearch'].section[document.forms['minisearch'].section.selectedIndex].value)">
+			<option value="/">Sound On Sound</option>
+			<option value="http://www.soundonsound.com/Contents.php">Current Issue</option><option value="http://www.soundonsound.com/news">News</option><option value="http://www.soundonsound.com/subs">Subscribers</option><option value="http://www.soundonsound.com/shop">Shop</option><option value="http://www.soundonsound.com/adverts">Readers Ads</option><option value="http://www.soundonsound.com/articles/People.php">People</option><option value="http://www.soundonsound.com/articles/Technique.php">Technique</option><option value="http://www.soundonsound.com/articles/Reviews.php">Reviews</option><option value="http://www.soundonsound.com/articles/People.php">Music Business</option><option value="http://sound-on-sound2.infopop.net/2/OpenTopic?a=frm&s=215094572&f=041092264">Links</option><option value="http://www.soundonsound.com/competitions">Competition</option><option value="http://www.soundonsound.com/soundbank">SoundBank</option><option value="http://www.soundonsound.com/articles/SoundAdvice.php">Sound Advice</option><option value="http://www.soundonsound.com/forum">Forum</option><option value="http://www.soundonsound.com">Live Sound</option>		</select>
+	</td>
+	<input type="hidden" name="url" value="/search">
+	<td align="right" valign="middle">&nbsp;
+		<input type="text" name="Keyword" size="15" value=" quick search" onCLick="if (this.value==' quick search') this.value=''" />
+	</td>
+	<td align="left" valign="middle"><a href="javascript:GoSearch()"><img src="/images/nav_go.gif" border="0" alt="Go" name="Search" /></a></td>
+	</form>
+</tr>
+</table></td>
+		</tr>
+		</table>
+		
+		<table width="99.9%" cellpadding="0" cellspacing="0" border="0" style="padding-left: 5px; padding-right: 5px">
+		<tr>
+							<td width="156"><img src="/images/spacer.gif" height="17" width="156" border="0" vspace="3" /></td>
+						<td width="100%"><img src="/images/spacer.gif" height="17" width="440" border="0" vspace="3" /></td>
+			<td width="146"><img src="/images/spacer.gif" height="17" width="146" border="0" vspace="3" /></td>
+		</tr>
+		<tr>
+		<td valign="top" width="156" style="padding-right: 10px; border-right: solid 1px #cccccc"><div class="smallblacktext"><br /></div></td><td style="padding-left: 20px; padding-right: 20px; padding-top:10px" valign="top"><div align="center">
+<img src="/dvd/images/sosdvd002_cover.jpg" alt="" height="149" width="150" border="0"></div>
+<p class="introtext">The second-ever covermounted DVD-ROM produced by SOS is available FREE from 20th October 2005 with ALL November editions of SOUND ON SOUND.</p>
+<div align="center" class="bodytext">
+What you missed on <a href="/dvd/dvd001.php"><strong>DVD001</strong></a><br/>
+<br/>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td colspan="3" align="left" valign="top">
+<div align="center"><img src="/dvd/images/dvdcontent2.jpg" alt="" height="331" width="492" border="0"></div>
+</td>
+</tr>
+<tr>
+
+<!-- -->
+
+<td align="left" valign="top" width="48%">
+<div align="center"><br>
+<img src="/dvd/images/dvdrecguitar.jpg" alt="" height="154" width="235" border="0"><br>
+<br>
+</div>
+<div class="ContentsRule">
+<span class="ContentsTitle">Recording Acoustic Guitar</span><br/>
+<span class="ContentsSubTitle">Watch as we explore miking and recording techniques with acoustic guitarist Gordon Giltrap.</span></div>
+<div class="ContentsRule">
+<span class="ContentsTitle">R &amp; B Production Masterclass</span><br/>
+<span class="ContentsSubTitle">Your chance to mix an R&amp;B track &mdash; install the Audio and Session files, then follow the electronic guide.</span></div>
+<div class="ContentsRule">
+<span class="ContentsTitle">SOS 20th Anniversary: Bill Nelson EXCLUSIVE Track!</span><br/>
+<span class="ContentsSubTitle">Listen to this exclusive track composed especially by Bill Nelson, while reading the PDF document of the entire Issue 1 from November 1985. </span></div>
+<div class="ContentsRule">
+<span class="ContentsTitle">Product Zone</span><br/>
+<span class="ContentsSubTitle">20 Multimedia showcases of these products:</span>
+<ul>
+<Li><span class="ContentsSubTitle">SSL AWS900</span></Li>
+<Li><span class="ContentsSubTitle">Focusrite Saffire</span></Li>
+<Li><span class="ContentsSubTitle">Buchla 200e</span></Li>
+<Li><span class="ContentsSubTitle">M Audio iControl</span></Li>
+<Li><span class="ContentsSubTitle">Lexicon MX200</span></Li>
+<Li><span class="ContentsSubTitle">Waves GTR</span></Li>
+<Li><span class="ContentsSubTitle">Yamaha AW1600</span></Li>
+<Li><span class="ContentsSubTitle">Roland V-Synth XT</span></Li>
+<Li><span class="ContentsSubTitle">TC <I>NonLin2</I></span></Li>
+<Li><span class="ContentsSubTitle">Steinberg<I> Virtual Bassist</I></span></Li>
+<Li><span class="ContentsSubTitle">RealTraps MiniTraps</span></Li>
+<Li><span class="ContentsSubTitle">Korg D4</span></Li>
+<Li><span class="ContentsSubTitle">PreSonus ADL600</span></Li>
+<Li><span class="ContentsSubTitle">NI <I>Reaktor5</I></span></Li>
+<Li><span class="ContentsSubTitle">MOTU <I>MX4</I></span></Li>
+<Li><span class="ContentsSubTitle">Bornemark <I>Broomstick Bass</I></span></Li>
+<Li><span class="ContentsSubTitle">FXpansion <I>GURU</I></span></Li>
+<Li><span class="ContentsSubTitle">Numark iDJ</span></Li>
+<Li><span class="ContentsSubTitle">EW/QL <I>Symphonic Choirs</I></span></Li>
+<Li><span class="ContentsSubTitle">EastWest/QL <I>Ra</I></span></Li>
+</ul>
+</div>
+<div class="ContentsRule">
+<span class="ContentsTitle">Brian Eno: Producer/Musician</span><br/>
+<span class="ContentsSubTitle">Musician/producer Brian Eno shares his radical ideas about music and modern technology.</span></div>
+<div class="ContentsRule">
+<span class="ContentsTitle">Greg Haver: Producer/Engineer</span><br/>
+<span class="ContentsSubTitle">Greg Haver talks about life in the producer's chair with The Manics, Melanie C, and New Zealand bands...</span></div>
+<div class="ContentsRule">
+<span class="ContentsTitle">Software</span><br/>
+<span class="ContentsSubTitle">PC Audio Interface Utilities:</span>
+<ul>
+<Li><span class="ContentsSubTitle">ASIO4ALL Drivers 2.6</span></Li>
+<Li><span class="ContentsSubTitle">Double Dawg &amp; Ulysses</span></Li>
+<Li><span class="ContentsSubTitle">RightMark Audio Analyser version 5.5 and User's Guide</span></Li>
+<Li><span class="ContentsSubTitle">MidiTest 3.1.216</span></Li>
+</ul>
+<span class="ContentsSubTitle"><B>FXpansion GURU</B> (demo).
+</div>
+<div align="center"><br>
+<img src="/dvd/images/dvdaudioplayback2.jpg" alt="" height="46" width="235" border="0"><br>
+<br>
+</div>
+<div class="ContentsRule"><span class="ContentsTitle">Readers Tracks: 118 Minutes Of Unsigned Music</span><br/>
+<span class="ContentsSubTitle">Use the SOS Music Player to audition this disc's compilation of unsigned music composed by <I>Sound On Sound</I> readers.</span>
+</div>
+<div class="ContentsRule">
+<span class="ContentsTitle">SOS Audio Resources</span><br/>
+<span class="ContentsSubTitle">Check out our audio files to accompany these recent SOS articles:</span>
+<ul>
+<Li><span class="ContentsSubTitle">The Lost Art Of Sampling (series)</span></Li>
+<Li><span class="ContentsSubTitle">Basement Arts <I>Frantic</I></span></Li>
+<Li><span class="ContentsSubTitle">Roland V-Synth XT</span></Li>
+<Li><span class="ContentsSubTitle">Korg D4 audio tests</span></Li>
+<Li><span class="ContentsSubTitle">Lexicon MX200</span></Li>
+</ul>
+</div>
+</td>
+
+<!-- -->
+
+<td align="left" valign="top" width="20"><img src="../images/spacer.gif" alt="" height="1" width="10" border="0"></td>
+<td align="left" valign="top" width="48%">
+<div align="center"><br>
+<img src="/dvd/images/dvdguitar.jpg" alt="" height="154" width="235" border="0"><br>
+<br>
+</div>
+<div class="ContentsRule">
+<span class="ContentsTitle">Experimental Guitar Processing</span><br/>
+<span class="ContentsSubTitle">Watch SOS's tutorial video as Paul White experiments with a music track where all the parts &mdash; including 'drums' &mdash; are created on his guitar.</span></div>
+<div class="ContentsRule">
+<span class="ContentsTitle">FREE <I>Pure Space</I> Convolution Reverb Impulse Response</span><br/>
+<span class="ContentsSubTitle">Load up this 24-bit full-sounding concert hall IR from Numerical Sound.</span></div>
+<div class="ContentsRule">
+<span class="ContentsTitle">MIDI Velocity Mapping In Software Samplers</span><br/>
+<span class="ContentsSubTitle">Do all software samplers accurately map MIDI velocity? Our guide reveals the dynamic truth.</span></div>
+<div align="center"><br>
+<img src="/dvd/images/dvdstudiosos2.jpg" alt="" height="154" width="235" border="0"><br>
+<br></div>
+<div class="ContentsRule">
+<span class="ContentsTitle">Studio SOS</span><br/>
+<span class="ContentsSubTitle">Paul White and Hugh Robjohns answer a call for help from musician/songwriter Bella Saer.</span>
+</div>
+<div class="ContentsRule">
+<span class="ContentsTitle">FREE Samples plus SOS Sample Shop Audio Demos</span>
+<ul>
+<Li><span class="ContentsSubTitle"><B>SONICCOUTURE</B> &mdash; five full <I>Kontakt2</I> instruments plus MP3 demo tracks of sounds from <I>Abstrakt Vol.1</I> Advanced Sampling Synthesis.</span></Li>
+<Li><span class="ContentsSubTitle"><B>HOLLOW SUN</B> &mdash; Yamaha FS1R and Korg M/01 samples from their <I>Classic Keyboards</I> range along with MP3 demo tracks.</span></Li>
+<Li><span class="ContentsSubTitle"><B>ZERO G &mdash;</B> ReFill from their <I>Chemical Synths</I> library.</span></Li>
+<Li><span class="ContentsSubTitle"><B>DRUM DROPS</B> &mdash; Apple/REX/WAV loops, single hits and multitrack samples from their <I>In The Bronx Vol.1</I> and <I>Fistful Of Drummers</I> libraries.</span></Li>
+</ul>
+<span class="ContentsTitle"><B>SAMPLE SHOP</B> &mdash; PLUS demo WAV and MP3 files from:</span>
+<ul>
+<Li><span class="ContentsSubTitle">Analog Archive</span></Li>
+<Li><span class="ContentsSubTitle">Cycles</span></Li>
+<Li><span class="ContentsSubTitle">EZ Rollers</span></Li>
+<Li><span class="ContentsSubTitle">Notre Dame de Budapest</span></Li>
+<Li><span class="ContentsSubTitle">Spatial Awareness</span></Li>
+<Li><span class="ContentsSubTitle">Ghetto Electro</span></Li>
+<Li><span class="ContentsSubTitle">DFH Custom &amp; Vintage</span></Li>
+<Li><span class="ContentsSubTitle">Housematic</span></Li>
+<Li><span class="ContentsSubTitle">Cycles Volume Four: Momentary Incursions</span></Li>
+</ul>
+</div>
+<div align="center"><br>
+<img src="/dvd/images/dvdzoom2.jpg" alt="" height="115" width="235" border="0"><br>
+<br>
+</div>
+<div class="ContentsRule"><span class="ContentsTitle">SOS Photo Zoom</span><br/>
+<span class="ContentsSubTitle">Use the SOS Photo Zoom tool to get up close and personal with recent new products like the Korg D4.</span></div>
+
+<!-- -->
+
+</td>
+</tr>
+</table>
+</div>
+<p class="xhead">IMPORTANT</p>
+<ul class="bodytext">
+<li><strong>FLASH PLAYER</strong> &mdash; The SOS DVD uses <strong>Version&nbsp;7</strong> of the Macromedia Flash Player to present its media-rich content within your browser. If you do <u>not</u> have Flash Player v7 installed, you will be unable to watch video or hear audio playback.<br/>
+<strong>If you have a previous version installed, you <u>will</u> need to upgrade to v7.</strong><br/>
+
+Click on the Get Flash Player button below to download the v7 Flash Player, if you do not have it installed already.</li>
+<li><strong>JAVASCRIPT</strong> &mdash; The SOS DVD also requires that your browser has Javascript enabled.</li>
+<li><strong>WEB CONNECTION</strong> &mdash; The disc is designed to link to the SOS web site to provide bonus background information to articles. Please <u>disable</u> popup blocking software to ensure that you see these related features (or make www.soundonsound.com a &quot;Trusted Site&quot; in your browser).</li>
+<li><strong>COMPATIBILITY</strong> &mdash; The SOS DVD is designed to run on both MACINTOSH OS&nbsp;X and WINDOWS&nbsp;XP operating systems.</li>
+</ul>
+<br/>
+<p class="xhead">Recommended Computer Specification</p>
+<p class="bodytext"><strong>Windows</strong><a href="http://www.macromedia.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" target="_new"><img src="/dvd/images/get_flash_player.gif" height="31" width="88" align="right" border="0"></a></p>
+<ul class="bodytext">
+<li>Pentium 4 1.5GHz or higher</li>
+<li>512MB RAM</li>
+<li>Windows XP Pro, XP Home</li>
+<li>DVD-ROM drive </li>
+<li>Sound playback facility </li>
+<li>Display 1024x768 or higher with Colour depth set to Highest (32-bit) </li>
+<li>Web Browser: Internet Explorer 6, Firefox 1.0, Netscape 7.0 </li>
+<li><a href="http://www.macromedia.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" target="_new">Macromedia Flash Player&nbsp;7</a></li>
+<li>Internet connection</li>
+</ul>
+<p class="bodytext"><strong>Macintosh</strong><a href="http://www.macromedia.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" target="_new"><img src="/dvd/images/get_flash_player.gif" height="31" width="88" align="right" border="0"></a></p>
+<ul class="bodytext">
+<li>Apple Mac G4 or higher</li>
+<li>512MB RAM</li>
+<li>OS&nbsp;X 10.3.9 or newer</li>
+<li>DVD-ROM drive</li>
+<li>Sound playback facility</li>
+<li>Display 1024x768 or higher with Colour depth set to Millions</li>
+<li>Web Browser: Safari, Internet Explorer 5.2.3 or newer, Firefox 1.0, Netscape 6.0</li>
+<li><a href="http://www.macromedia.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" target="_new">Macromedia Flash Player&nbsp;7</a></li>
+<li>Internet connection<br/>
+
+<br/>
+
+(OS9.x is <i>not</i> recommended but it may work on fast Macs with plentiful RAM)</li>
+</ul>
+<p class="bodytext"><strong>Important</strong>: This DVD has not been tested with the Linux OS.</p>
+<p class="xhead">Software Problems?</p>
+<p class="bodytext"><strong>Windows XP SP2 users</strong> - When you launch Internet Explorer you may get a dialogue box warning you about Active content. Please be assured that the content on the DVD is perfectly safe. This is a standard (if not annoying) part of the security updates in SP2. For more information about this there is a good web site that explains all. Go to <a href="http://www.phdcc.com/xpsp2.htm" target="_new">www.phdcc.com/xpsp2.htm</a></p>
+<p class="bodytext">If you have a query about the disc interface or its content, please email our support address for further assistance: <a href="mailto:dvdsupport@soundonsound.com">dvdsupport@soundonsound.com</a></p>
+<p class="bodytext">Please note: SOS personnel can only provide basic advice on using the interface, and installing the software from disc. Unfortunately we cannot give in-depth help on applications provided on the disc by third-parties, or your hardware or operating system.</p>
+<p class="bodytext"><strong>Any Comments?</strong> Please send your comments and suggestions to the DVD Editor at <a href="mailto:dvd@soundonsound.com">dvd@soundonsound.com</a>.</p>
+<p class="bodytext"><strong>Defective Disc?</strong> In the unlikely event of your disc being defective, we will gladly send you a working version within 28 days (UK). Please post your defective disc along with your name and address, plus a description of the fault, to: SOS DVD Returns, Sound On Sound Ltd, Media House, Trafalgar Way, Bar Hill, Cambridge, CB3 8SQ, UK.</p>
+<br>
+</div></td><td valign="top" height="200" width="135" style="padding-left: 10px; border-left: solid 1px #cccccc"><span class="Small">Monday 20th February 2006</span><br /><br />
+	<div style="width: 125px; padding-bottom: 10px">
+	<div class="Small" style="padding: 4px; font-weight: bold; color: #ffffff; background: #000000; text-align: center">Login here</div>
+	<div class="Small" style="border: 1px solid #000; padding: 5px">
+		<form action="https://www.soundonsound.com/xt_Login.php" method="post">		
+				<div style="margin-top: 3px">Sub PIN or Email</div>
+		<div><input type="text" name="LoginID" style="width: 100px; font-size: 9px" value="" /></div>
+		<div>Password</div>
+		<div><input name="Password" type="password" style="width: 100px; font-size: 9px" value="" /></div>
+		<div onmouseover="return escape('Tick this box to store your Email/Sub PIN only (not password) on this computer')">Remember me <input type="checkbox" name="Remember" value="1"  /></div>
+		<div onmouseover="return escape('Tick this box to stay permanently logged into the site from this computer. You will need to explicitly log out in order to cancel this feature.')">Stay logged in <input type="checkbox" name="Persist" value="1"  /></div>
+		<div style="padding-top: 3px; padding-bottom: 3px; text-align:center"><input type="submit" value="Login" style="font-size: 9px" /></div>
+		</form>
+		<div class="Small">
+		<b>Forgotten your password?</b><br />
+		<a href="https://www.soundonsound.com/UserAccount/ForgotPassword.php">Request a reminder</a>
+		</div>
+		<div class="Small" style="padding-top: 6px">
+		<b>Not registered? </b><br />
+		<a href="https://www.soundonsound.com/UserAccount/NewUser.php">Register Now for FREE</a>
+		</div>
+		<div class="Small" style="padding-top: 6px">
+		<b>No https access?</b><br />
+		<a href="http://www.soundonsound.com/Login.php?nohttps">Login here</a>
+		</div>
+	</div>
+	</div>
+	<script language="JavaScript" type="text/javascript" src="/include/wz_tooltip.js"></script>
+	
+<img src="/images/linkbullet.gif" height="7" width="7" hspace="2"><div style="position: relative; top: -10px; left: 12px"><div class="RightLink" style="padding-bottom: 10px"><a href="javascript:SwitchNav('0')">Show old-style menus</a></div></div><div class="smallblacktext"><br /></div></td></tr></table><br/><table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tr>
+	<td width="156"><img src="/images/spacer.gif" height="5" width="156" /></td>	<td width="100%">
+					<div class="footer"><a href="#Top"><img src="/images/top.gif" border="0" alt="Top of page"></a></div>
+			<div class="footer">
+				<a href="http://www.soundonsound.com/index.php?url=//">Home</a> |
+				<a href="http://www.soundonsound.com/search">Search</a> | 
+				<a href="http://www.soundonsound.com/news">News</a> |
+				<a href="http://www.soundonsound.com/Contents.php">Current Issue</a> | 
+				<a href="http://www.soundonsound.com/articles">Articles</a> | 
+				<a href="http://www.soundonsound.com/forum">Forum</a> | 
+				<a href="http://www.soundonsound.com/subs">Subscribe</a> | 
+				<a href="http://www.soundonsound.com/shop">Shop</a> | 
+				<a href="http://www.soundonsound.com/adverts">Readers Ads</a><br />
+				<img src="/images/spacer.gif" height="4" width="1" /><br />
+				<a href="http://www.soundonsound.com/information/PrintAds.php">Advertise</a> | 
+				<a href="http://www.soundonsound.com/information">Information</a> | 
+				<a href="http://sound-on-sound2.infopop.net/2/OpenTopic?a=frm&s=215094572&f=041092264">Links</a> |
+				<a href="http://www.soundonsound.com/information/SOSPrivacyPolicy.php">Privacy Policy</a>
+				</div><br/>
+			<div class="footer"><a href="http://www.amazon.co.uk/exec/obidos/redirect-home/soundonsoundmaga"><img src="/images/adverts/adFooter468x60.gif" border="0" alt="SAVE MONEY: click for bargain-priced DVDs, Books, Music CDs, Software and more from  Amazon.co.uk"></a></div>			<div class="footer">In association with Amazon.co.uk</div><br/>
+				<div class="footer"><b>Sound On Sound, Media House, Trafalgar Way, Bar Hill, Cambridge CB3 8SQ, UK</b>. <br />
+			Email: <a href="mailto:sos@soundonsound.com">sos@soundonsound.com</a> | Telephone: +44 (0)1954 789888 | Fax: +44 (0)1954 789895</div><br/>
+		<div class="copyright">All contents copyright &copy; SOS Publications Group and/or its licensors, 1985-2006. 
+			All rights reserved.<br />The contents of this article are subject to worldwide copyright protection and reproduction in whole or part, whether mechanical or electronic, is expressly forbidden without the prior written consent of the Publishers. Great care has been taken to ensure accuracy in the preparation of this article but neither Sound On Sound Limited nor the publishers can be held responsible for its contents. The views expressed are those of the contributors and not necessarily those of the publishers. <br /><br />Web site designed &amp; maintained by PB Associates | SOS | Relative Media</div>
+				<br />
+					<div class="footer">Problems with this site? <a href="http://www.soundonsound.com/support">Contact us</a></div>
+			</td>
+	<td><img src="/images/spacer.gif" height="1" width="146" /></td></tr>
+</table>
+</body>
+</html>

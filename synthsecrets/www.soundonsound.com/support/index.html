@@ -1,0 +1,137 @@
+<html>
+<head>
+<title>Sound On Sound Support</title>
+<link href="/styles/StyleMac.css" rel="stylesheet" methods="text/css" type="text/css"></head>
+<body style="padding: 5px">
+<img src="/images/nav_logo.gif" height="66" width="298" />
+<div class="PageHeader">Support Request</div>
+<span>In order to help us to help you, we need to ask you some detailed questions about your computer, its 
+setup, and how you access the internet. Please take a couple of minutes to fill in this form, then
+submit it and we will investigate.</span>
+
+<form name="Request" action="xt_Request.php" method="post">
+<table cellpadding="2" cellspacing="0" border="0">
+<tr>
+	<td colspan="2" valign="bottom" style="height: 40px;border-bottom: 1px solid black; font-weight: bold">About You</td>
+</tr>
+<tr>
+	<td class="label">Your name</td>
+	<td><input type="text" name="Name" value="" /></td>
+</tr>
+<tr>
+	<td class="label">Your email address</td>
+	<td><input type="text" name="Email" value="" /></td>
+</tr>
+<tr>
+	<td class="label">Confirm email address</td>
+	<td><input type="text" name="EmailConf" value="" /></td>
+</tr>
+</table>
+<table cellpadding="2" cellspacing="4" border="0">
+<tr>
+	<td colspan="3" valign="bottom" style="height: 40px;border-bottom: 1px solid black; font-weight: bold">About Your Computer</td>
+</tr>
+<tr>
+	<td class="label" valign="top">What kind of computer of you using?</td>
+	<td colspan="2"><input type="radio" name="PCType" value="PC" /> PC &nbsp;
+		<input type="radio" name="PCType" value="Mac" /> Mac &nbsp;<br />
+		<input type="radio" name="PCType" value="Other" /> Other: &nbsp; 
+		<input type="text" name="PCTypeOther" /></td>
+</tr>
+<tr>
+	<td class="label" valign="top">Which operating system are you using?</td>
+	<td><input type="radio" name="OS" value="Windows 98" /> Windows 98<br />
+		<input type="radio" name="OS" value="Windows ME" /> Windows ME<br />
+		<input type="radio" name="OS" value="Windows 2000" /> Windows 2000<br />
+		<input type="radio" name="OS" value="Windows NT" /> Windows NT<br />
+		<input type="radio" name="OS" value="Windows XP" /> Windows XP<br />
+		<input type="radio" name="OS" value="OS8.x" /> Mac OS 8.x<br />
+		<input type="radio" name="OS" value="OS9.x" /> Mac OS 9.x<br />
+		<input type="radio" name="OS" value="OS10.x" /> Mac OS 10.x<br />
+		<input type="radio" name="OS" value="Other" /> Other:
+		<input type="text" name="OSOther" /><br />
+	</td>
+</tr>
+<tr>
+	<td valign="top" class="label">Which web browser (and version) are you using?</td>
+	<td valign="top"><input type="radio" name="Browser" value="IE 4.x" /> Internet Explorer 4.x<br />
+		<input type="radio" name="Browser" value="IE 5.x" /> Internet Explorer 5.x<br />
+		<input type="radio" name="Browser" value="IE 6.x" /> Internet Explorer 6.x<br />
+		<input type="radio" name="Browser" value="Netscape 4.x" /> Netscape 4.x<br />
+		<input type="radio" name="Browser" value="Netscape 6.x" /> Netscape 6.x<br />
+		<input type="radio" name="Browser" value="Netscape 7.x" /> Netscape 7.x<br />
+		<input type="radio" name="Browser" value="Other" /> Other:
+		<input type="text" name="BrowserOther" /><br />
+	</td>
+</tr>
+<tr>
+	<td class="label" valign="top">Do you have any firewall software installed<br />(e.g. ZoneAlarm) and if yes, what?</td>
+	<td colspan="2"><input type="radio" name="Firewall" value="None" /> No &nbsp;
+		<input type="radio" name="Firewall" value="Other" /> Yes (please specify) <br />
+		<input type="text" name="FirewallOther" value="" /></td>
+</tr>
+<tr>
+	<td class="label" valign="top">How do you connect to the internet?</td>
+	<td colspan="2"><input type="radio" name="Connection" value="Dial-up" /> Dial-up<br />
+		<input type="radio" name="Connection" value="Broadband" /> Broadband (ADSL, DSL, etc.)<br />
+		<input type="radio" name="Connection" value="LAN" /> LAN<br />
+		<input type="radio" name="Connection" value="Other" /> Other:
+		<input type="text" name="ConnectionOther" />
+	</td>
+</tr>
+<tr>
+	<td class="label">Which ISP provides your connection<br />(e.g. AOL, Cable company, BT)?</td>
+	<td colspan="2"><input type="text" name="ISP" value="" /></td>
+</tr>
+</table>
+<table cellpadding="2" cellspacing="4" border="0">
+<tr>
+	<td colspan="2" valign="bottom" style="height: 40px;border-bottom: 1px solid black; font-weight: bold">About Your Problem</td>
+</tr>
+<tr>
+	<td colspan="2" class="label">Please describe the problem in as much detail as possible.</td>
+</tr>
+<tr>
+	<td colspan="2"><textarea name="Problem" style="width: 500px; height: 100px"></textarea></td>
+</tr>
+<tr>
+	<td class="label" colspan="2">Have you been able to use this feature of the site in the past without problems (on this PC)?</td>
+</tr>
+<tr>
+	<td class="label" colspan="2">
+		<select name="Before">
+		<option value=" ">--Select one--</option>
+		<option value="Yes">Yes - I've never had this error before</option>
+		<option value="No">No - I got this problem last time</option>
+		<option value="First time">Not applicable - this is my first time using this part of the site</option>
+		<option value="Don't know">Don't know</option>
+		</select>
+	</td>
+</tr>
+<tr>
+	<td colspan="2" class="label">Please copy and paste any error messages you received into the box below</td>
+</tr>
+<tr>
+	<td colspan="2"><textarea name="ErrorMsg" style="width: 500px; height: 100px"></textarea></td>
+</tr>
+<tr>
+	<td colspan="2" class="label">Your browser sent this information to the server. This information will
+		be included in your support request.</td>
+</tr>
+<tr>
+	<td colspan="2"><textarea type="text" name="Headers" style="width: 500px; height: 100px">
+		User-Agent:Wget/1.8.1
+Host:www.soundonsound.com
+Accept:*/*
+Connection:Keep-Alive
+Referer:http://www.soundonsound.com/sos/allsynthsecrets.htm
+Cookie:session = dfed35d891616849f922d9457c3ca34a
+IP address: 64.81.246.165</textarea></td>
+</tr>
+<tr>
+	<td colspan="2" align="center"><input type="submit" value="Send Request" /></td>
+</tr>
+</table>
+</form>
+</body>
+</html>

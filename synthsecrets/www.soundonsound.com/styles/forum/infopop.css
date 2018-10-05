@@ -1,0 +1,174 @@
+form {
+  display: inline;
+  margin-bottom: 0;
+}
+.tablesurround {
+	background: #ffffff;
+	color: #000000;
+}
+.tableborders {
+	background: #c0c0c0;
+	color: #ffffff;
+}
+.tdheader {
+  font-size: 10pt;
+  font-weight: bold;
+  color: #000000;
+  background: #cdcece;
+}
+.menubar{
+  background: #ffff99;
+  color: #000000;
+}
+.navigation{
+  background: #cdcece;
+  color: #000000;
+  font-size: 10pt;
+  border-style: solid;
+  border-width: 0px 1px 1px 0px;
+  border-color: #666699;
+  padding: 2px; 
+  margin: 1px;
+}
+.new {
+  font-size: 9pt;
+  color: #CC0033;
+  background: none;
+}
+.catandforum {
+  font-size: 10pt;
+}
+.posttime {
+	font-size: 10pt;
+	background: #f7f7f7;
+	color: #000000;
+}
+.threadtotal {
+	font-size: 10pt;
+	background: #f7f7f7;
+	color: #000000;
+}
+.posttotal {
+  font-size: 10pt;
+  background: #f7f7f7;
+  color: #000000;
+}
+.modline {
+  font-size: 9pt;
+}
+.standouttext {
+  color: #ff0000;
+  background: none;
+}
+.pollcolor {
+	background: #ff0000;
+	color: #000000;
+	border: 1px solid #000000;
+}
+.welcome {
+  background: #c0c0c0;
+  color: #000000;
+}
+.forumtitle a {
+  font-size: 10pt;
+  font-weight: bold;
+  color: #cc0033; 
+  background: none;
+}
+.forumdescript {
+  font-size: 9pt;
+}
+.lighttable {
+  background: #f7f7f7;
+  color: #000000;
+}
+.darktable {
+  background: #f7f7f7;
+  color: #000000;
+}
+.newlighttable {
+	background: #cddfff;
+	color: #000000;
+}
+.newdarktable {
+	background: #cddfff;
+	color: #000000;
+}
+.newpostsincat {
+	background: #ffff99;
+	color: #000000;
+}
+.cleartable {
+	background: #f7f7f7;
+	color: #000000;
+}
+.alternatetable {
+	background: #c0c0c0;
+	color: #000000;
+}
+.newsubjecttable {
+	background: #e6e6e6
+	font-weight: bold;
+	color: #000000;
+}
+.subjecttable {
+  background: #dedfdf;
+  color: #000000;
+}
+.footertable {
+	background: #ffffff;
+	color: #000000;
+}                          
+.formboxes{
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 10pt;
+}
+.buttons {
+	background-color: #dedfdf;
+	color: #000000;
+	font-size: 10pt;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+blockquote {
+   font-size: 10pt; border: 1px solid #cdd0c7;
+   margin: 0px 20px; padding: 0px 10px
+}
+blockquote .small {
+	background: #e6e6e6;
+	margin-left:-10px;
+	padding: 1px 2px;
+	color: #000000;
+}
+blockquote hr {
+   visibility:hidden;
+   height: 1px
+}
+blockquote br {
+   font-size: 1px
+}
+
+.onbody {
+  color: #000000;
+  background: none;
+}
+.onbody a:link {
+  color: #0000FF;
+  background: none;
+}
+.onbody a:visited {
+  color: #000066;
+  background: none;
+}
+.onbody a:active {
+  color: #000066;
+  background: none;
+}
+.post:first-letter {
+}
+pre {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	display: block;
+	white-space: pre;
+}

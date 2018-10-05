@@ -1,0 +1,322 @@
+
+	<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+	<html>
+	<head>
+		<title>Sonar Notes</title>
+		<meta http-equiv="content-type" content="text/html;charset=ISO-8859-1">
+		<meta name="robots" content="index,follow">
+		<script language="javascript" src="/include/utility.js"></script>
+		<link rel="alternate" type="application/rss+xml" title="RSS" href="/news/sosrssfeed.php" />
+		<link rel="SHORTCUT ICON" href="/favicon.ico">
+		<meta name="description" content="sound on sound magazine, november 2005 issue, sonar notes cakewalk sonar software news, advice and tips column by craig anderton. when the version number's most significant digit increments, you know something big is going to happen...">
+<meta name="keywords" content="sound on sound, november 2005, sonar notes, craig anderton, sonar 5, producer, studio, 64-bit, floating point, bit bridge, vst, plug-in, v-voice, variphrase, roland, rex file support.">
+<link href="/styles/StyleMac.css" rel="stylesheet" methods="text/css" type="text/css">		<script language="Javascript">
+		<!--//
+							var iBanner = 0;
+				var aryBanner = Array();
+				var lastrun = 0;
+				var iInterval = 30000;
+			
+				aryBanner[0] = Array('www.sheetmusicplus.com/a/button.html?id=74020', '/images/adverts/smp468x60genericani.gif', 'Buy your sheet music online! Click here', false);
+				aryBanner[1] = Array('www.sounds-expo.co.uk', '/images/adverts/sounds-banner-raz-doe2.gif', 'Sounds Expo! Click here', false);
+				//aryBanner[1] = Array('www.surroundexpo.com', '/images/adverts/surround468x60.gif', 'Surround Expo 2005', false);
+				if (aryBanner.length > 1) var banTimerID = setTimeout('ChangeBanner()', iInterval);
+			
+				function ChangeBanner() {
+					// Check we're not running this too quickly (Firefox runaway condition)
+					var t = new Date();
+					thisrun = t.getMinutes() * 60 + t.getSeconds();
+					if (thisrun - lastrun < iInterval/1000) return;
+					
+					iBanner = (iBanner == aryBanner.length - 1) ? 0 : iBanner + 1;
+					var page = document.all ? document.all : document;
+					page.Banner.src = aryBanner[iBanner][1];
+					page.Banner.alt = aryBanner[iBanner][2];
+
+					if (banTimerID) clearTimeout(banTimerID);
+					if (aryBanner.length > 1) {
+						banTimerID = setTimeout('ChangeBanner()', iInterval);
+						lastrun = thisrun;
+					}
+				}
+			
+				function GoBanner() {
+					OpenSite(aryBanner[iBanner][0]);
+					return;
+				}
+						
+							function PrinterFriendly() {
+					window.open('http://www.soundonsound.com/sos/nov05/articles/sonarnotes.htm?print=yes&session=dfed35d891616849f922d9457c3ca34a','Win0001','height=500,width=780,scrollbars=yes,resizeable=yes');
+				}
+				// -->
+		</script>
+	</head>
+	<body topmargin="0" marginheight="0" leftmargin="0" marginwidth="0" onload="ChangeBanner();">
+			<SCRIPT language="JavaScript" src="/include/milonic_src.js" type="text/javascript"></SCRIPT>	
+		<script	language="JavaScript">
+		if(ns4)_d.write('<scr'+'ipt language="JavaScript" src="/include/mmenuns4.js"><\/scr'+"ipt>");		
+		  else _d.write("<scr"+'ipt language="JavaScript" src="/include/mmenudom.js"><\/scr'+"ipt>"); 
+		</script>
+		<SCRIPT language="JavaScript" src="http://www.soundonsound.com/include/menu_data.js.php" type="text/javascript"></SCRIPT>	
+		<script language="Javascript">drawMenus();</script>
+		<a name="Top"></a>
+	<table cellpadding="0" cellspacing="0" border="0" width="99.9%">
+	<tr>
+		<td style="padding-top: 5px; padding-left: 5px"><a href="http://www.soundonsound.com/index.php?url=/"><img src="/images/nav_logo.gif" width="298" height="66" alt="Sound On Sound : click for home page" border="0" /></a></td>
+				<td style="padding-top: 5px; padding-right: 5px" valign="top" align="right"><a href="javascript:GoBanner()"><img name="Banner" src="/images/spacer.gif" height="60" width="468" border="0" alt="" hspace="5" /></a></td>
+		</tr>
+		<tr>
+			<td style="padding-left: 5px; padding-top: 6px" class="navtext"><div id="PageTitle">Sonar Notes : <b>November 2005</b></div>
+			</td>
+			<td style="padding-right: 5px"  align="right"><script language="Javascript">
+function GoSearch() {
+	var frm = document.forms['minisearch'];
+	if (frm.Keyword.value != ' quick search' && frm.Keyword.value != '') {
+		frm.submit();
+	} else {
+		alert('Please type in something to search for!');
+	}
+}
+</script>
+<table border="0" cellpadding="1" cellspacing="0" align="right">
+<tr>
+	<form name="minisearch" action="http://www.soundonsound.com/index.php" method="get">
+	<td align="right" valign="middle"><img src="/images/nav_jumpto.gif" alt="jump to" align="absmiddle" border="0">
+		<select name="section" size="1" onChange="location.href=(document.forms['minisearch'].section[document.forms['minisearch'].section.selectedIndex].value)">
+			<option value="/">Sound On Sound</option>
+			<option value="http://www.soundonsound.com/Contents.php">Current Issue</option><option value="http://www.soundonsound.com/news">News</option><option value="http://www.soundonsound.com/subs">Subscribers</option><option value="http://www.soundonsound.com/shop">Shop</option><option value="http://www.soundonsound.com/adverts">Readers Ads</option><option value="http://www.soundonsound.com/articles/People.php">People</option><option value="http://www.soundonsound.com/articles/Technique.php">Technique</option><option value="http://www.soundonsound.com/articles/Reviews.php">Reviews</option><option value="http://www.soundonsound.com/articles/People.php">Music Business</option><option value="http://sound-on-sound2.infopop.net/2/OpenTopic?a=frm&s=215094572&f=041092264">Links</option><option value="http://www.soundonsound.com/competitions">Competition</option><option value="http://www.soundonsound.com/soundbank">SoundBank</option><option value="http://www.soundonsound.com/articles/SoundAdvice.php">Sound Advice</option><option value="http://www.soundonsound.com/forum">Forum</option><option value="http://www.soundonsound.com">Live Sound</option>		</select>
+	</td>
+	<input type="hidden" name="url" value="/search">
+	<td align="right" valign="middle">&nbsp;
+		<input type="text" name="Keyword" size="15" value=" quick search" onCLick="if (this.value==' quick search') this.value=''" />
+	</td>
+	<td align="left" valign="middle"><a href="javascript:GoSearch()"><img src="/images/nav_go.gif" border="0" alt="Go" name="Search" /></a></td>
+	</form>
+</tr>
+</table></td>
+		</tr>
+		</table>
+		
+		<table width="99.9%" cellpadding="0" cellspacing="0" border="0" style="padding-left: 5px; padding-right: 5px">
+		<tr>
+							<td width="156"><img src="/images/spacer.gif" height="17" width="156" border="0" vspace="3" /></td>
+						<td width="100%"><img src="/images/spacer.gif" height="17" width="440" border="0" vspace="3" /></td>
+			<td width="146"><img src="/images/spacer.gif" height="17" width="146" border="0" vspace="3" /></td>
+		</tr>
+		<tr>
+		<td valign="top" width="156" style="padding-right: 10px; border-right: solid 1px #cccccc"><div class="Small">In this article:</div>
+<img src="/images/linkbulletbk.gif" height="7" width="7" hspace="2" /><a class="LeftLink" href="#1">64 Bits Better?</a><br />
+<img src="/images/linkbulletbk.gif" height="7" width="7" hspace="2" /><a class="LeftLink" href="#4">REX Support</a><br />
+<img src="/images/linkbulletbk.gif" height="7" width="7" hspace="2" /><a class="LeftLink" href="#2">Speaking Of VST...</a><br />
+<img src="/images/linkbulletbk.gif" height="7" width="7" hspace="2" /><a class="LeftLink" href="#3"><em>V-Voice</em></a><br />
+
+<img src="/images/spacer.gif" height="4" width="1" /><br /><hr style="margin-top: 4px; margin-bottom: 8px;border: 0px; border-bottom: solid 1px #cccccc"><div class="smallblacktext"><div class="WOR">SOS Latest News</div>
+<img src="/images/linkbullet.gif" height="7" width="7" hspace="4"><a href="http://www.soundonsound.com/news?NewsID=8104">Focusrite launch Saffire Pro 26 I/O</a><br />
+<img src="/images/linkbullet.gif" height="7" width="7" hspace="4"><a href="http://www.soundonsound.com/news?NewsID=8103">New soft synth from Cakewalk</a><br />
+<img src="/images/linkbullet.gif" height="7" width="7" hspace="4"><a href="http://www.soundonsound.com/news?NewsID=8102"><i>Wavelab 6</i> special offers</a><br />
+<img src="/images/linkbullet.gif" height="7" width="7" hspace="4"><a href="http://www.soundonsound.com/news?NewsID=8101">Buy SOS Premium Content with BT Click&Buy</a><br />
+<img src="/images/linkbullet.gif" height="7" width="7" hspace="4"><a href="http://www.soundonsound.com/news?NewsID=8100">Hardware Hammond module from Creamware</a><br />
+<a href="http://www.soundonsound.com/search?Section=2">More...</a><form action="/search" method="get" name="NewsSearch">
+<input type="hidden" name="Section" value="2" />
+<div class="Small" style="margin-top: 5px">News category:</div>
+<select class="Small" name="Subject" style="width: 146px" onChange="NewsSearchCat()">
+<option value=" ">--All--</option>
+<option value="104">Accessory</option>
+<option value="105">A-D/D-A Converter</option>
+<option value="106">Artists/Engineers/Producers/Programmers</option>
+<option value="107">Books/Publications</option>
+<option value="172">Classic Tracks</option>
+<option value="87">Composing/Arranging</option>
+<option value="108">Computer</option>
+<option value="109">Computer Recording System</option>
+<option value="162">Courses</option>
+<option value="159">Distributor</option>
+<option value="91">DIY</option>
+<option value="110">Drum machine</option>
+<option value="163">Duplication</option>
+<option value="111">Effects</option>
+<option value="92">Effects/Processing</option>
+<option value="112">Electronic Drumkit</option>
+<option value="173">Events</option>
+<option value="113">Expansion Board</option>
+<option value="114">Format converter</option>
+<option value="115">Guitar Amplifier</option>
+<option value="116">Hardware Controller</option>
+<option value="117">Hardware Sequencer</option>
+<option value="118">Industry/Music Biz</option>
+<option value="119">Keyboard</option>
+<option value="120">Keyboard workstation</option>
+<option value="170">Live Sound</option>
+<option value="158">Manufacturer</option>
+<option value="157">Mastering</option>
+<option value="121">Microphone</option>
+<option value="122">MIDI Controller</option>
+<option value="123">MIDI File Player/Recorder</option>
+<option value="124">MIDI Interface</option>
+<option value="125">Miscellaneous</option>
+<option value="155">Miking Techniques</option>
+<option value="126">Mixer</option>
+<option value="127">Modular Synth</option>
+<option value="168">Monitor Controller</option>
+<option value="128">Monitors</option>
+<option value="94">Multimedia</option>
+<option value="129">Multitrack Recorder</option>
+<option value="90">Music Business</option>
+<option value="161">Music Sites</option>
+<option value="130">Patchbay</option>
+<option value="131">PC Soundcard</option>
+<option value="132">PC/Mac Soundcard</option>
+<option value="154">Plug-ins</option>
+<option value="133">Preamp</option>
+<option value="156">Processing</option>
+<option value="134">Processor</option>
+<option value="169">Recording Channel</option>
+<option value="135">Recording System</option>
+<option value="95">Recording/Mixing</option>
+<option value="164">Repair services</option>
+<option value="136">Sample Shop</option>
+<option value="137">Sampler</option>
+<option value="96">Sampling</option>
+<option value="138">Sampling Workstation</option>
+<option value="97">Sequencing & MIDI Controllers</option>
+<option value="139">Sequencing Workstation</option>
+<option value="160">Services</option>
+<option value="140">Software</option>
+<option value="85">SOS announcement</option>
+<option value="141">Sound Module</option>
+<option value="142">Sound/Song Library</option>
+<option value="143">Speaker Simulator</option>
+<option value="144">Stereo Recorder</option>
+<option value="145">Studio Power Amplifier</option>
+<option value="146">Synchroniser</option>
+<option value="98">Synthesis</option>
+<option value="99">Theory + Technical</option>
+<option value="153">VST Instruments</option>
+<option value="152">VST plug-ins</option>
+	</select>
+</select>
+</div>
+</form>
+<script language="Javascript">
+function NewsSearchCat() {
+	var frm = document.forms['NewsSearch'];
+	if (frm.Subject[frm.Subject.selectedIndex].value != ' ') frm.submit();
+}
+</script><br /><img src="/images/linkbullet.gif" height="7" width="7" hspace="2"><div style="position: relative; top: -10px; left: 12px"><a class="LeftLink" href="http://www.soundonsound.com/berklee/music.php"><hr><b>Learn Music Production</b> Study Online with Berklee College of Music<hr></a></div><img src="/images/linkbullet.gif" height="7" width="7" hspace="2"><div style="position: relative; top: -10px; left: 12px"><a class="LeftLink" href="http://www.soundonsound.com/forum">WANT MORE TIPS & TECHNIQUE INFO? Visit the SOS FORUM</a></div><img src="/images/linkbullet.gif" height="7" width="7" hspace="2"><div style="position: relative; top: -10px; left: 12px"><a class="LeftLink" href="http://www.soundonsound.com/search?&url=%2Fsearch&Section=15&Summary=Yes&Articles=Search+Articles">SOS SOUND ADVICE Tips</a></div><img src="/images/linkbullet.gif" height="7" width="7" hspace="2"><div style="position: relative; top: -10px; left: 12px"><a class="LeftLink" href="http://www.soundonsound.com/information/Glossary.php">GLOSSARY: Tech Terms explained</a></div><br /></div></td><td style="padding-left: 20px; padding-right: 20px; padding-top:10px" valign="top"><div class="TitleBox"><div class="MainTitle" style="float:left">Sonar Notes</div><div style="clear:left" class="SubTitle">News & Tips</div><div class="Published" style="float:right">Published in SOS  November 2005<br /><a href="javascript:PrinterFriendly()"><img src="/images/PrintIcon.gif" height="14" width="14" border="0" alt="Printer-friendly version" /> Printer-friendly version</a></div><div class="SectionSubject" style="float:left">Technique : Sonar Notes</div></div><div style="width: 100%; height: 28px;">&nbsp;</div>
+
+
+<p><div class="introtext">When the version number's most significant digit increments, you know something big is going to happen...</div></p>
+<p><div class="author">Craig Anderton</div></p>
+<p class="bodytext">S<em>onar</em>'s 'update odometer' has just flipped over from 4.0.3 to 5.0. Whatever happened to those '.1' and '.2' updates? Let's just say that what I've seen at a special preview of <em>Sonar 5</em> justifies the jump. There's a lot to investigate &mdash; more than I can fit in one <em>Sonar</em> Notes &mdash; so I'll cover what I can and carry on next month.</p>
+<p><a name="1"></a>
+<div class="xhead" id="1">64 Bits Better?</div></p>
+<p class="bodytext"><em>Sonar 5</em> retains the <em>Producer</em>/<em>Studio</em> version division, and either package includes two versions of the program on the same distribution media, one with native 32-bit and one with native 64-bit operation. Based on what I've seen floating around the web, there are a lot of misconceptions about what this means, so first, let's address bits.</p>
+<p class="bodytext">Both new <em>Sonar</em> versions use a 64-bit data path from input to output, and all calculations are done in 64-bit floating point. <em>Sonar</em> isn't the first program to use a true 64-bit data path; iZotope's <em>Ozone</em> plug-in, for example, implemented this some time ago. However, it does not require a 64-bit operating system to work. It simply means that audio, regardless of its original resolution, is calculated with 64-bit floating point precision. This applies to all branches of the signal path &mdash; tracks, busses, effects and so on &mdash; not just the summing buss.</p>
+<table width="216" border="0" cellspacing="4" cellpadding="4" align="right">
+<tr>
+<td><a href="../images/sonarvvocal.l.jpg" target="_blank" onmouseout="window.status='' ; return true"onmouseover="window.status='Click here to see full size image' ; return true"><img src="../images/sonarvvocal.s.jpg" border="0" alt="sonar V-Vocal" border="0"></a>
+<div class="caption"><em>V-Voice</em> puts Roland's Variphrase technology into a plug-in.</div>
+</td>
+</tr>
+</table>
+<p class="bodytext">For those who feel that 'something funny' happens when digital signals are summed, this should settle the issue. It's true that the lower the resolution, the greater the odds of round-off errors accumulating. This was very audible with 16-bit systems, and some would argue that 32-bit floating-point and 48-bit fixed calculations also degraded the sound, albeit subtly. However, it's hard to imagine that argument being made for 64-bit floating-point systems. We're talking huge amounts of resolution, where any round-off errors are more of a theoretical than a practical reality.</p>
+<p class="bodytext">But if both the 32- and 64-bit versions use 64-bit maths, why bother upgrading to Windows x64 and a 64-bit capable processor? The answer lies in the ability to address 128GB of physical RAM, and some performance gains. As mentioned in a previous <em>Sonar</em> Notes, the extra RAM gives advantages regarding streaming huge samples and recording into RAM, while the ability to use longer word lengths yields performance increases of 10 to 30 percent.</p>
+<p class="bodytext">However, there's a major stumbling block with a true 64-bit operating system: the plug-ins and other system elements must all be 64-bit as well. Or must they? Actually, <em>Sonar 5</em> employs a clever technology called Bit Bridge, which allows the hosting of 32-bit VST plug-ins in a 64-bit environment. Yes, even "the most obscure independently developed shareware programs" (a quote from the <em>Sonar</em> press information) can run on your 64-bit computer. That's a pretty good thing, because the VST spec has not yet caught up with 64 bits. On the other hand, DX and DXi, being part of the Microsoft OS, are inherently ready for 64-bit operation.</p>
+<p class="bodytext">Incidentally, most new computers have 64-bit capable chips; they just haven't had anything to flex their muscles on yet. With the official release of Windows x64 and <em>Sonar 5</em>, the latest processors can be used to full advantage. The fact that you don't have to give up your older plug-ins is great. But note that Cakewalk have already started porting their plug-ins over to 64-bit operation, starting with the <em>Sonitus</em> line.</p>
+<table width="100%" border="0" cellspacing="4" cellpadding="4">
+<tr>
+<td><a name="4"></a>
+<div class="Footer" style="float: left;text-align: left;margin-right: 20px"><a href="#Top"><img src="/images/arttop.gif" border="0" alt="Top of page"></a></div>
+
+<div class="boxhead" id="4">REX Support</div>
+<div class="boxtext"><em>Sonar 5</em> offers REX file support, and its REX file player makes it easy to drag the accompanying MIDI sequence into the track view so that you can modify the sequence, transpose it, copy it and so on. We'll take a look at the new version's improvements to the MIDI side of the program next month.</div>
+</td>
+</tr>
+</table>
+<p><a name="2"></a>
+<div class="Footer" style="float: left;"><a href="#Top"><img src="/images/arttop.gif" border="0" alt="Top of page"></a></div>
+
+<div class="xhead" id="2">Speaking Of VST...</div></p>
+<p class="bodytext"><em>Sonar 5</em> now offers native VST support &mdash; no wrapper required. The VST configuration menu still looks very much like the old VST-DX adaptor, but what's going on 'under the hood' is quite different. Also, unlike other programs that take forever to boot up as they scan the VST plug-ins folder, <em>Sonar 5</em> apparently has some kind of routine that re-scans only if it detects a change in the status of installed plug-ins. Very sensible.</p>
+<p><a name="3"></a>
+<div class="Footer" style="float: left;"><a href="#Top"><img src="/images/arttop.gif" border="0" alt="Top of page"></a></div>
+
+<div class="xhead" id="3"><em>V-Voice</em></div></p>
+<p class="bodytext">Another big <em>Sonar 5</em> feature is the incorporation of Roland's Variphrase audio technology into a plug-in called <em>V-Voice</em>. This plug-in renders audio malleable in many ways. You can detect and then modify the pitch of entire sections of audio or selected notes, constrain audio to particular notes, vary the formant independently of pitch and amplitude, add vibrato (either manually or via an LFO) and create dynamics where none previously existed.</p>
+<p class="bodytext">You can also stretch pieces of audio temporally, in a similar way to <em>Live</em>'s 'elastic audio' feature, by clicking on a section and dragging it left to shorten or right to lengthen. Best of all, the sound quality is remarkably free of nasty artifacts, even with significant amounts of stretching. It's primarily intended as an effect for voice and pitch correction, but <em>V-Voice</em> also works well with drums, lead guitar, bass and other monophonic instruments. It's suitable, too, for creative sound design with polyphonic instruments, and even program material. This is something you have to hear to believe, as it opens up both realistic and off-the-wall sonic options. I bet some people will upgrade just for this feature. <a href="http://www.soundonsound.com" target="_top"><img src="../../../images/sos_end.gif" alt="" height="11" width="18" align="absmiddle" border="0"></a></p><div class="Published">Published in SOS  November 2005</div></td><td valign="top" height="200" width="135" style="padding-left: 10px; border-left: solid 1px #cccccc"><span class="Small">Monday 20th February 2006</span><br /><br />
+	<div style="width: 125px; padding-bottom: 10px">
+	<div class="Small" style="padding: 4px; font-weight: bold; color: #ffffff; background: #000000; text-align: center">Login here</div>
+	<div class="Small" style="border: 1px solid #000; padding: 5px">
+		<form action="https://www.soundonsound.com/xt_Login.php" method="post">		
+				<div style="margin-top: 3px">Sub PIN or Email</div>
+		<div><input type="text" name="LoginID" style="width: 100px; font-size: 9px" value="" /></div>
+		<div>Password</div>
+		<div><input name="Password" type="password" style="width: 100px; font-size: 9px" value="" /></div>
+		<div onmouseover="return escape('Tick this box to store your Email/Sub PIN only (not password) on this computer')">Remember me <input type="checkbox" name="Remember" value="1"  /></div>
+		<div onmouseover="return escape('Tick this box to stay permanently logged into the site from this computer. You will need to explicitly log out in order to cancel this feature.')">Stay logged in <input type="checkbox" name="Persist" value="1"  /></div>
+		<div style="padding-top: 3px; padding-bottom: 3px; text-align:center"><input type="submit" value="Login" style="font-size: 9px" /></div>
+		</form>
+		<div class="Small">
+		<b>Forgotten your password?</b><br />
+		<a href="https://www.soundonsound.com/UserAccount/ForgotPassword.php">Request a reminder</a>
+		</div>
+		<div class="Small" style="padding-top: 6px">
+		<b>Not registered? </b><br />
+		<a href="https://www.soundonsound.com/UserAccount/NewUser.php">Register Now for FREE</a>
+		</div>
+		<div class="Small" style="padding-top: 6px">
+		<b>No https access?</b><br />
+		<a href="http://www.soundonsound.com/Login.php?nohttps">Login here</a>
+		</div>
+	</div>
+	</div>
+	<script language="JavaScript" type="text/javascript" src="/include/wz_tooltip.js"></script>
+	
+<img src="/images/linkbullet.gif" height="7" width="7" hspace="2"><div style="position: relative; top: -10px; left: 12px"><div class="RightLink" style="padding-bottom: 10px"><a href="javascript:SwitchNav('0')">Show old-style menus</a></div></div><div class="smallblacktext"><br/>
+<div class="WOB" style="letter-spacing: 2px; font-weight: bold; text-align: center">March 2006</div> 
+<div style="background-color: #99CCCC; padding: 3px; border: solid 1px gray">
+<div class="smallblacktext">On sale now at main newsagents and bookstores (or buy direct from the <a href="/shop">SOS Web Shop</a>)<br />
+<center><a href="http://www.soundonsound.com/Contents.php"><img src="/images/FrontCover.jpg" alt="SOS current Print Magazine: click here for FULL Contents list" width="112" height="157" vspace="3" border="0"></a></center></div>
+<div style="padding: 1px; font-size: 9px; text-align: center; valign: top">Click image for Contents</a></div>
+<br/>
+<div class="Small"><b>Other recent issues:</b><br />
+<img src="/images/linkbullet.gif" height="7" width="7" hspace="4"><a href="http://www.soundonsound.com/Contents.php?Month=2&Year=2006">February 2006</a><br />
+<img src="/images/linkbullet.gif" height="7" width="7" hspace="4"><a href="http://www.soundonsound.com/Contents.php?Month=1&Year=2006">January 2006</a><br />
+<img src="/images/linkbullet.gif" height="7" width="7" hspace="4"><a href="http://www.soundonsound.com/Contents.php?Month=12&Year=2005">December 2005</a><br />
+<img src="/images/linkbullet.gif" height="7" width="7" hspace="4"><a href="http://www.soundonsound.com/Contents.php?Month=11&Year=2005">November 2005</a><br />
+<img src="/images/linkbullet.gif" height="7" width="7" hspace="4"><a href="http://www.soundonsound.com/Contents.php?Month=10&Year=2005">October 2005</a><br />
+
+</div></div>
+
+<br /><div align="center"><a href="http://www.soundonsound.com/shop/Product.php?ProdID=160"><img src="/images/backissuecd.gif" border="0" vspace="4" /></a></div><img src="/images/linkbullet.gif" height="7" width="7" hspace="2"><div style="position: relative; top: -10px; left: 12px"><a class="RightLink" href="javascript:OpenSite('http://www.amazon.co.uk/exec/obidos/external-search/202-9106945-3506206?mode=books&keyword=paul%2Bwhite&tag=soundonsoundmaga')">Recommended Reading: <br/>PAUL WHITE Books</a></div><div align="center"><a href="http://www.soundonsound.com/subs"><img src="/images/100x60_usasubs.gif" border="0" vspace="4" /></a></div><div class="smallgreytext"><b>Screenshots too small?</b> Click on photos, screenshots and diagrams in articles (after August 2003 issue) to open a Larger View window for detailed viewing/printing.</div><br /><div align="center"><a href="javascript:OpenSite('http://www.berkleemusic.com/?pid=857')"><img src="/images/adverts/berkleestudyproduction.gif" border="0" vspace="4" /></a></div><div align="center"><a href="javascript:OpenSite('http://www.soundonsound.com/shop/Product.php?ProdID=196')"><img src="/images/backissues_125x230.gif" border="0" vspace="4" /></a></div><br /></div></td></tr></table><br/><table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tr>
+	<td width="156"><img src="/images/spacer.gif" height="5" width="156" /></td>	<td width="100%">
+					<div class="footer"><a href="#Top"><img src="/images/top.gif" border="0" alt="Top of page"></a></div>
+			<div class="footer">
+				<a href="http://www.soundonsound.com/index.php?url=//">Home</a> |
+				<a href="http://www.soundonsound.com/search">Search</a> | 
+				<a href="http://www.soundonsound.com/news">News</a> |
+				<a href="http://www.soundonsound.com/Contents.php">Current Issue</a> | 
+				<a href="http://www.soundonsound.com/articles">Articles</a> | 
+				<a href="http://www.soundonsound.com/forum">Forum</a> | 
+				<a href="http://www.soundonsound.com/subs">Subscribe</a> | 
+				<a href="http://www.soundonsound.com/shop">Shop</a> | 
+				<a href="http://www.soundonsound.com/adverts">Readers Ads</a><br />
+				<img src="/images/spacer.gif" height="4" width="1" /><br />
+				<a href="http://www.soundonsound.com/information/PrintAds.php">Advertise</a> | 
+				<a href="http://www.soundonsound.com/information">Information</a> | 
+				<a href="http://sound-on-sound2.infopop.net/2/OpenTopic?a=frm&s=215094572&f=041092264">Links</a> |
+				<a href="http://www.soundonsound.com/information/SOSPrivacyPolicy.php">Privacy Policy</a>
+				</div><br/>
+			<div class="footer"><a href="http://www.amazon.co.uk/exec/obidos/redirect-home/soundonsoundmaga"><img src="/images/adverts/adFooter468x60.gif" border="0" alt="SAVE MONEY: click for bargain-priced DVDs, Books, Music CDs, Software and more from  Amazon.co.uk"></a></div>			<div class="footer">In association with Amazon.co.uk</div><br/>
+				<div class="footer"><b>Sound On Sound, Media House, Trafalgar Way, Bar Hill, Cambridge CB3 8SQ, UK</b>. <br />
+			Email: <a href="mailto:sos@soundonsound.com">sos@soundonsound.com</a> | Telephone: +44 (0)1954 789888 | Fax: +44 (0)1954 789895</div><br/>
+		<div class="copyright">All contents copyright &copy; SOS Publications Group and/or its licensors, 1985-2006. 
+			All rights reserved.<br />The contents of this article are subject to worldwide copyright protection and reproduction in whole or part, whether mechanical or electronic, is expressly forbidden without the prior written consent of the Publishers. Great care has been taken to ensure accuracy in the preparation of this article but neither Sound On Sound Limited nor the publishers can be held responsible for its contents. The views expressed are those of the contributors and not necessarily those of the publishers. <br /><br />Web site designed &amp; maintained by PB Associates | SOS | Relative Media</div>
+				<br />
+					<div class="footer">Problems with this site? <a href="http://www.soundonsound.com/support">Contact us</a></div>
+			</td>
+	<td><img src="/images/spacer.gif" height="1" width="146" /></td></tr>
+</table>
+</body>
+</html>
