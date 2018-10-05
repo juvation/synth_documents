@@ -1,0 +1,76 @@
+Move256.exe Beta
+
+Win95/98/NT
+
+Used to create .256 EPROM files for the Wiard synthesizer company "Waveform City" module.
+Creates 256 consecutive waveforms in a 64K file, organized as 16 Banks of 16 Waves.
+Each wave is 256 contiguous bytes. Target device is a generic 27C512 EPROM any speed grade.
+The two axis represent +/-5 volts, X = in, Y = out.
+
+Tutorial:
+
+Back up the New.256 file
+
+Open the New.256 file to start.
+
+*You can scroll through the waveforms using the Bank and Wave controls.
+
+*Use the "Audition" botton for live playback with DirectX equipt machines.
+
+Use "Clear Wave" button to blank a whole wave.
+
+Getting Started:
+
+1. Go to the "Additive" menu. Set the "Amplitude" to 127
+
+2. Go through the radio buttons to try the different starter waveforms.
+
+3. Use the rest of the menus to mess up the waveform.
+
+3. Save as a *.256 file.
+
+When burning into EPROM, use 'binary' file type and 27C512 device.
+
+Contents of New.256
+
+Bank
+0: Basic waveform morph (inspired by EML 101) last wave is 8va saw
+1: Original bank 0 reorganized to be less jarring 3 flavors noise at end
+2. Sine to Square 16 step morph ala Tone Source all ODD harmonics
+3: Sine to FWR 16 step morph ala Tone Source all EVEN harmonics
+4: Sine to Saw morph also useful for non-linear processing
+5: FWR Sine to Square morph EVEN to ODD pan
+6: PWM double wave pulse width modulation
+7: Binary Rate Multiplier (CD4089)
+8: Sixteen samples from a Votrax SC-01 Voder chip
+9: Sixteen contiguous samples from a Mellotron
+10: Piano cascade, sixteen exponentially spaced samples
+
+Filter simulations:
+11: Additive sweep up to 5th harmonic
+12: Full amplitude morph up to 5th harmonic
+13: Low resonance filter sweep
+14: Harmonic Series
+15: Quantizer Bank 
+
+5 Octaves out for 0-255 input
+
+Wave:
+0  Chromatic 12 notes per octave (4 steps per note)
+1  Diatonic Major (C-D-E-F-G-A-B) Eight per octave (6 steps per note)
+2  Diatonic Harmonic Minor (C-D-D#-F-G-G#-B) Eight per octave (6 steps per note)
+3  Diatonic Natural Minor (C-D-D#-F-G-G#-A#) Eight per octave (6 steps per note)
+4  Diatonic Dorian Mode (C-D-D#-F-G-A-A#) Eight per octave (6 steps per note)
+5  Diatonic Phygian Mode (C-C#-D#-F-G-G#-A#) Eight per octave (6 steps per note)
+6  Diatonic Lydian Mode (C-D-E-F#-G-A-B) Eight per octave (6 steps per note)
+7  Diatonic Aolian Mode (C-D-E-F-G-G#-A#) Eight per octave (6 steps per note)
+8  Whole Tone (C-D-E-F#-G#-A#) 6 notes per octave (8 steps per note)
+9  Pentatonic (C#-D#-F#-G#-A#) 5 notes per octave (10 steps per note)
+10  C Major (C-E-G) 3 notes per octave (17 steps per note)
+11  A minor (C-E-A) 
+12  G Major (D-G-B) 
+13  F major (C-F-A) 
+14  D major (D - F# - A) 
+15  Octaves one note per octave (46 steps per note)
+
+

@@ -1,0 +1,37 @@
+Wiard Synthesizer Company
+Software Registration Form
+
+Please send US$20 if you wish to be put on the notification list for the next upgrade.
+
+Make Check Payable to:
+
+Grant Richter
+211 East Dover Street
+Miwaukee, WI 53207
+
+
+Name_____________________________________________
+
+Address___________________________________________
+
+Country/Planet_____________________________________
+
+Are you using this product with:
+
+___Max MPS
+___Csound
+___Custom Wavetable Hardware
+		Sample Size_____
+		Address Generator:  Counter____  ADC____
+		PLL   Yes____   No____
+___Wiard Waveform City
+
+
+					Address Label (Cut out)
+
+
+
+						Wiard Synthesizer Company
+						211 East Dover Street
+						Milwaukee, WI 53207
+						US

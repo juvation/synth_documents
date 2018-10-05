@@ -1,0 +1,19 @@
+Move256.exe Alpha
+
+Win95/98/NT
+
+Used to move Wiard Waveform City waves around in Banks.
+
+Open any TO file (*.256)
+Open any FROM file (*.256)
+
+Keeps two open buffers, can be used to rearrange the same file.
+Overwrites file with Save so use Save As.
+
+Rev. 1.0
+
+Bugs:
+
+1. Wave and Bank numbers are one off (should start at zero not one).
+2. Possible exit errors, don't have any other program (except Move256.exe) open when using
+this program. Use at your own risk.
