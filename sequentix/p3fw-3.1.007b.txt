@@ -1,0 +1,450 @@
+Started revision file 20/04/2005
+Code version 3.1.nnn
+==============================
+
+2/12/2007
+Added PLED screensaver
+
+2/9/2007
+knob n to leng extended to length 13
+
+5/8/2007
+Memx compatability
+
+9/5/2007
+Fixed mask dAcc events
+
+18/03/07
+Fixed bad handling of PXPos in sysex receive (show notes as flats flag affecting PXPos value)
+
+10/03/07
+Show tempo knob adjusted position even when bank locked
+Reset accumulators on restart to prevent stuck values in RoPS disabled patterns
+
+28/01/07
+'part view' disabled to prioritise use of code space in T89 CPU
+
+26/01/07
+Added 'DIN stop' to playmode page 4
+Added RemCon CCs 24 to 31 (set note acc), 32 to 39 (set velo acc) and 40 to 47 (set auxD acc)
+
+20/01/07
+Test code for 'part view'
+
+14/01/07
+Refresh xDAcD flag for current pattern on edit
+
+24/12/06
+Added 'learn' and 'teach' softkeys to aux config menu as second page
+
+15/12/06
+Added stretch-tie entry mode; user config option "Gate edit mode 2"
+
+9/12/06
+Added 'eitherway' direction (50% previous step, 50% next step)
+
+7/12/06
+Extended sculpt of length to include 13 (hold)
+
+17/10/06
+Modified sync handling again - MIDI stop now allowed while running, except during re-sync to prevent self-stop
+
+1/10/06
+Timebase reset to internal behaviour fixed - stays set to MIDI timebase after stop unless TEMPO adjusted
+
+23/9/06
+Changed "note span" to "octave rng"; 1 to 10 true octaves width (+7 notes on 10 octaves)
+
+15/9/06
+Timebase switches back to internal after manual stop during MIDI slave
+Tempo display shows MIDI or Bank tempo lock if TEMPO adjust disabled
+
+12/09/06
+Fixed btempo lock behaviour
+
+3/09/06
+Moved tempo set and display to separate functions, to ensure consistent behaviour
+Added bank init fine tempo
+
+25/08/06
+Added some extra checking to prevent collision of sequence starts and stops with external sync
+
+14/06/06
+Changes to wipe_sequence_data routine
+Fixed midi_flags status on boot
+
+6/06/06
+Added 'armed' track mode - hold STEP MODE then press TRACK key; track will reset (playlist and pattern) and unmute on next gbar reset
+
+1/06/06
+Added length of '13' to indicate 'hold until next active step'
+
+3.1.006 rev C - chk 2B7C
+
+26/05/06
+Fixed volatile user conf options
+
+24/05/06
+Fixed play mode record options select
+
+8/05/06
+Added 'Auto mute hold' user conf option, forces mute copy on part change
+
+3.1.006 rev B - chk 2A8C
+
+3/05/06
+Added 'Exit REC on stop' as user config option
+
+1/05/06
+Fixed incorrect compare in 'rnd mask aux c' and 'rnd mask aux d'
+
+28/04/06
+Fixed display of pgm number for 'send MIDI pgm'
+
+v3.1.006 rev A
+
+10/04/06
+Added checks on boot for valid BSB, BLJB and SBV - reset to correct values if required
+
+v3.1.006 released
+
+03/04/06
+Enabled play mode record in playlist edit
+
+31/03/06
+Fixed auxcf copy bug
+
+27/03/06
+Modified length/delay scaling by timebase
+
+Rc5 posted
+
+24/03/06
+Fixed labelling of triplet timebases, added 64T and 32T
+
+22/03/06
+Fixed behaviour of aux D acc mask events
+Changed display of rnd mask events to percentage
+
+18/03/06
+send MIDI clock moved to single event
+Added set length, set delay
+
+16/03/06
+String display changes for consistency
+
+15/03/06
+Testing MIDI CLOCK events
+Renamed "chg" to sync, display shows "S:Ptrn" or "S:GBar" for pattern or gbar sync
+
+10/03/06
+Various optimisations for code size reduction
+Clear held record notes on stop
+
+8/04/06
+Changed 'clr' selection method for all/aux
+
+7/04/06
+Changed bank init selection method for all/partial
+
+Rc1 posted
+
+27/02/06
+Added tbase 64
+Fixed hanging 'gate' LED on all tied notes
+
+25/02/06
+Fixed value display for 'set ... tbase' events to show real tbase value
+New mode LED option - track gates
+Added track record mode Sculpt support
+
+16/02/06
+Sculpt page shows target values before key press
+
+13/02/06
+Added '...xF' events to realtime record
+
+12/02/06
+Modified Event group, event and CC selection in Aux Conf
+Added PAGE+step direct access to play mode pages
+
+11/02/06
+Added '...xF' events to 'Poly...' quick config list
+Added direct access to pattern edit pages with PAGE+<step key>
+
+27/01/06
+Extended 'dub' options in record mode; 'note' = nDub, and 'gaps' records only into spaces
+
+25/01/06
+Moved volatile record status flags from rx_rec_control to midi_flags
+
+23/01/06
+Fixed possible tied note hanging with aux event MIDI channel change during note
+
+18/01/06
+Added 'rvtz' (reverse to zero) to accumulator limit behaviour options, 'rvrs' renamed to 'rvbp' (reverse bi-polar)
+Extended pattern sysex block with explicit acc config bytes
+
+17/01/06
+Added live/ready recrd softkey to pattern edit record mode
+
+16/01/06
+Modified Sculpt and Randomize to take effect only as each step begins, with new values used immediately
+
+11/01/06
+Added 'Quick Config' to pattern edit mode - accessed via FUNC+UPPER MODE, select macro with DATA pot
+
+27/12/05
+'aux note abs' events, range increased to full 128 note span - data values not compatible, fix with P3Tools
+
+22/12/05
+Re-jigged slaved clock handling
+Enabled re-sync for devices slaved to slaved P3
+
+20/12/05
+Fixed PCRep UI bug
+Added part save before sysex so current part changes are saved to memory before dump
+
+14/12/05
+Clock doubling code for external MIDI sync re-written to queue clocks if excessive source jitter exceeds maximum tempo
+Improved handling of excessively low external sync tempo
+
+12/12/05
+Fixed restore of current direction, last step and timebase after 'save to' or lose edit
+
+10/12/05
+Moved state load and aux handling out of clock_pulse handler - separate function now called by start_sequence and at end of clock_pulse handler, to eliminate aux handling latency
+Play mode func LEDs setting non-volatile 
+
+5/12/05
+Changed 'aux note ... Xd' events to '... xF' - PXPos and playlist xpos now apply, FTS still defeated
+'Aux note rel' notes now relative to final transposed/FTS'd value of primary note
+
+29/11/05
+All notes written to a queue instead of variable per primary and 4 auxes, maximum 8 notes per track
+
+28/11/05
+Added warning message on transmit buffer overflow (MIDI loop)
+
+23/11/05
+Internal change to aux note handling (aux_notes array)
+
+16/11/05
+Fixed pattern edit poly record of multiple aux note rels
+Condensed aux note handling code for reduced image size
+
+15/11/05
+Added 'aux note rel' support to poly record
+Fixed tied behaviour of inactive aux notes
+
+14/11/05
+Poly record mode first bash done
+
+5/11/05
+Changed initialised acc conf settings, velo and auxD limits to 127
+Changed Record FTS behaviour - no longer sets X, note is written to pattern as input or FTS'd
+Added remcon CC for incremental track mute/unmute/record enable
+Fixed fine tempo adjust bug
+
+4/11/05
+Fixed 'rndmz aux n' wrap behaviour
+
+2/11/05
+Fixed duplicate note-on causing note hang in record thru
+
+1/11/05
+Changed FUNC+PAGE behaviour to return to top page of other column, testing usability, may reverse change...
+
+30/10/05
+Real-time record tracks multiple notes for correct recording of notes played and released over held notes
+Added 'Global Xd ignore' user conf option, and extra user conf byte to sysex format
+
+29/10/05
+Restored bank init default of chg=P
+
+28/10/05
+Record thru re-implemented using parallel note stacks
+
+27/10/05
+Sysex dump routine optimisation
+MIDI handling optimisation
+Fixed hanging notes on remcon rec track change
+
+26/10/05
+Fixed rec-thru running status handling
+Added user conf byte 3 for test
+
+20/10/05
+Fixed FTS scale edit note name display with high root
+Fixed soft-thru weirdness
+
+17/10/2005
+Fixed erroneous MIDI clock restart after FUNC+RUN to continue
+Added 'START only' resync
+
+16/10/04
+Fixed bank non-select weirdness
+Re-enabled info messages
+
+13/10/05
+Modified MIDI soft thru behaviour
+
+12/10/05
+PXPos now applies to record mthru notes
+
+10/10/05
+Test help messages added to modifier keys (disabled for now)
+
+09/10/05
+Holding STEP MODE as TIE selected allows tie toggle with automatic return to GATE on release of STEP MODE
+
+08/10/05
+Added test bank select on RemCon CC 17, data = (bank - 1)
+
+07/10/05
+Modified out of range note wrapping behaviour, added rndmz'd aux clip
+
+06/10/05
+Added alternative sharps/flats note name display - FUNC+<select root> in FTS toggles view
+
+05/10/05
+Fixed Pauls obscure playlist edit bug
+Blocked pattern selection keys if 'step' or 'leng' held in PLE
+'nxt' key works on groups in aux config, and loops round events in the same group
+'Not in use' events hidden from selection
+Added 'add n to xC' and 'add n to xD' events
+
+04/10/05
+Event/CC assigned to aux displayed as aux is selected
+Re-ordered aux groups more logically
+Added 'all' paste option for notes, auxes and config paste in one
+
+03/10/05
+FTS Scale edit shows note names relative to current root
+Note lengths on delayed steps carry to the next step if it is also delayed
+FUNC+RUN while running sends MIDI STOP then START on GBar reset
+Fixed LED colours in aux display from conf menu
+Sequence engine optimisation to reduce code size
+
+24/09/05
+Fixed active sense handling
+Added 'xpose by n' event (rename?)
+Aux conf shows selected event first, not group
+
+14/09/05
+Pending change of tbase applied if pattern 'synced'
+MIDI continue always treated as a start if timebase not already switched to MIDI
+
+12/09/05
+String compression using escaped control codes for common strings
+
+10/09/05
+Added event groups to simplify selection
+Added 'set velocity' event
+
+2/09/05
+Added RemCon CCs for record track select, record options, track mute/unmute/toggle
+Disabled part change CC to revise
+Note-on RemCon PXPos centred around note 60, range limit of +/- 2 octaves
+
+1/09/05
+Modified part chain select behaviour so release order of part keys is not important
+Added note-on on RemCon channel to PXPos
+
+11/08/05
+Added simplified playlist step edit select, and quick contiguous pattern playlist creation
+
+10/08/05
+Optimisation of step key scanning routines
+Modified bank init of playlists to sequential pattern numbers
+Upgrade to sdcc 2.5.0 - reduced code size
+
+Added playlist edit mode shortcuts for step selection (except in 3 bank mode) and contiguous pattern playlist create
+
+9/08/05
+Fixed record not filtering correctly
+
+7/08/05
+Modified record channel settings to include 'trk' - rec channel auto set to same as recording track
+
+30/07/05
+Added support for specific record channel, with other channels thru as per non-record mode settings
+Added 'mthru' option to arpeggio capture
+
+15/07/05
+Added playmode knobs and flash current track LED to quick mute access
+
+-----------------
+v3.1.005 released
+-----------------
+
+4/07/05
+Fixed unsticky play mode record
+
+25/06/05
+Implemented push events, combined code with grab
+Fixed lack of playlist status refresh on 'lose' exit from PLE
+
+24/06/05
+Limited range of aux value edit for grab/swap/push to track numbers, unless FUNC is held
+
+22/06/05
+Fixed new aux value display
+
+17/06/05
+Condensed all grab and swap events to a single event each, with values holding type and track
+
+15/06/05
+Added mutex to set_tempo to prevent UI/SE conflict
+Fixed playlist length change refresh bug
+Fixed midi channel key read bug
+Modified position blip to ensure colour changes from static LED colour
+
+12/06/05
+Added 'set tempo' event
+
+3/06/05
+Changed FTS to use lookup table for note mapping, recalculated on scale activate
+
+30/05/05
+Added tie softkey to arp capture
+
+29/05/05
+Added 'Sticky keys' user conf option
+Optional toggle action for FUNC, PLAY/EDIT and REC keys in play mode with sticky keys on
+Fixed part select CC change of PLE part
+
+26/05/05
+Added user conf option 'No ANO on stop' - defeats sending of all notes off messages on sequence stop.
+Added remote control (RemCon) user conf options - RemCon TX & RemCon RX, and (rem)ote midi channel selection on key 10.
+Added sending of 'part select' test RemCon message on CC #0.
+
+7/05/05
+Added new user conf options to sysex dump
+
+-----------------
+v3.1.004 released
+-----------------
+
+30/04/05
+Added second ui_config byte: note numbers, auto save edits, enable mixer
+func key hold defeats mixer send to allow initial value set
+
+25/04/05
+Added parameter protection for midi transmit routines
+
+23/04/05
+Added test volume/pan sending on playmode knobs 9 - 16 and 25 - 32
+Added send continue instead of start with FUNC+RUN
+Added set midi channel aux event
+Revised playlist edit mode
+
+20/04/05
+Added 'UPPER MODE' gives playlist hold flag access in play and playlist edit modes
+
+
+-----------------
+new revision file
+post v3.1.003
+-----------------
+.
