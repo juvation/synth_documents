@@ -1,0 +1,150 @@
+1 - MIDI Controllers
+
+2 - Inter Track
+- grab
+- swap
+- push
+- xpose by track n
+- xpose by track n + p
+
+3 - Randomize
+- note
+- velocity
+- length
+- delay
+- aux B
+- aux C
+- aux D
+- mask gate
+- mask tie
+- mask aux B
+- mask aux C
+- mask aux D
+
+4 - Accumulator
+- offset note abs
+- offset note rel
+- offset velo abs
+- offset velo rel
+- offset aux D abs
+- offset aux D rel
+- note acc defeat
+- velo acc defeat
+- aux D acc defeat
+- set note acc limit
+- set velo acc limit
+- set aux D acc limit
+- set Dacc to leng
+- set Dacc to delay
+
+5 - Accumulator Mask
+- mask gate, dAcc >= n
+- mask gate, n > dAcc
+- mask tie, dAcc >= n
+- mask tie, n > dAcc
+- mask xB, dAcc >= n
+- mask xB, n > dAcc
+- mask xC, dAcc >= n
+- mask xC, n > dAcc
+- mute track, dAcc > n
+
+6 - Knob Mask
+- mask gate, Kn > n
+- mask gate, Kn -> n
+- mask gate, Kn < n
+- mask tie, Kn > n
+- mask tie, Kn -> n
+- mask tie, Kn < n
+- mask aux B, Kn > n
+- mask aux B, Kn -> n
+- mask aux B, Kn < n
+- mask aux C, Kn > n
+- mask aux C, Kn -> n
+- mask aux C, Kn < n
+- mask aux D, Kn > n
+- mask aux D, Kn -> n
+- mask aux D, Kn < n
+- mask nAcc, Kn > n
+- mask nAcc, Kn -> n
+- mask nAcc, Kn < n
+- mask vAcc, Kn > n
+- mask vAcc, Kn -> n
+- mask vAcc, Kn < n
+- mask dAcc, Kn > n
+- mask dAcc, Kn -> n
+- mask dAcc, Kn < n
+
+7 - Knob Grab
+- knob n to velo
+- knob n to length
+- knob n to aux C
+- knob n to aux D
+
+8 - Set Step Value
+- set note
+- set velocity
+- set length
+- set delay
+- xpose by n
+- add n to xC
+- add n to xD
+- set midi channel
+
+9 - Aux Note
+- aux note abs
+- aux note rel
+- aux note abs xF (without FTS)
+- aux note rel xF (without FTS)
+
+10 - Repeat
+- rep*2, note + n
+- rep*2, vel + n
+- rep*3, note + n
+- rep*3, vel + n
+- rep*4, note + n
+- rep*4, vel + n
+- rep*n by length
+- set rep*n note+
+- set rep*n velo+
+
+11 - Redirect Aux
+aux B = cc #n
+aux B = event n
+aux C = cc #n
+aux C = event n
+aux D = cc #n
+aux D = event n
+auxes to track n
+
+12 - Pattern Control
+- set last step abs
+- set last step rel
+- set norm timebase
+- set triplet timebase
+- set direction
+
+13 - Global Control
+- mute track n
+- unmute track n
+- select part
+- set pattern chain length
+- set tempo
+
+14 - MIDI Send
+- send aftertouch
+- send pitch bend
+- send program change
+- send clock
+
+
+
+
+
+
+
+
+
+
+
+
+
